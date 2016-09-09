@@ -12,14 +12,14 @@ but even though WordPress can be great, I did not want to deal with a database, 
 Moreover, writing posts on WordPress has always been confusing for me: I was never
 satisfied with the visual mode, because something weird would always happen to the layout,
 so I was always writing in text mode, usually copy-pasting my code from my favorite
-text editor to WordPress.
+text editor into WordPress.
 
 I wanted to write a post using MarkDown or Jade, or something like that, so that I can
 just focus on the content without repeating myself.
-Only plain text files, no database, no deployment, etc. HTML would be generated
-from a bunch of text files easy to edit.
+Only plain text files, no database, no deployment, no moving parts, no code execution.
+HTML would be generated from a bunch of text files easy to edit.
 I thought a second about creating my own framework to do that, however it soon
-occurred to me that I was dumb. In such a broad community, someone else must have
+occurred to me that I was a fool. In such a broad community, someone else must have
 had the exact same idea before me. And that someone most surely made that idea
 a reality.
 
