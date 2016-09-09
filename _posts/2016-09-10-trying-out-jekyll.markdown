@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Trying out Jekyll"
+date:   2016-09-10 02:33:34 +0900
 categories: try jekyll
 ---
 
