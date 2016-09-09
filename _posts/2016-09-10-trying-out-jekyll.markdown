@@ -40,6 +40,7 @@ precisely needed.
 
 All in all, it took me less than an hour to download and install Jekyll,
 start from a template and deploy my site with the draft of my first article.
+It basically just works.
 
 Jekyll is so hassle-free and blissful that you will get addicted to it.
 Beware.
