@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
 Hello, my name is Malik, a software and language enthusiast living in Japan.
