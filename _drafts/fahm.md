@@ -7,7 +7,44 @@ categories: fahm arabic pop-up dictionary
 
 ## An Arabic Pop-up dictionary
 
-As far as I know, such pop-up dictionary did not exist until I made
-[fahm](https://chrome.google.com/webstore/detail/fahm-arabic-pop-up-dictio/nmndkfhbopdpiocgcfkmppalkfjjgehe).
+After having started to learn Arabic, I was frustrated by the lack of Arabic pop-up
+dictionary. I was looking for something similar to [rikaichan](https://addons.mozilla.org/en-US/firefox/addon/rikaichan/)
+or [Zhongwen](https://chrome.google.com/webstore/detail/zhongwen-chinese-english/kkmlkkjojmombglmlpbpapmhcaljjkde?hl=en)
+for Japanese and Chinese.
 
-If requested, a port for Firefox may be done.
+Arabic, like Japanese or Chinese has a writing system for which inferring the reading
+is not straightforward. I wanted to look up a word vocalization (the small pop)
+
+As far as I know, such pop-up dictionary did not exist until I made
+[Fahm](https://chrome.google.com/webstore/detail/fahm-arabic-pop-up-dictio/nmndkfhbopdpiocgcfkmppalkfjjgehe) ("فهم", meaning "understanding"), an extension for Google Chrome.
+Basically, hovering your mouse over any Arabic word inside your browser will open a pop-up window containing a translation.
+
+## Fahm
+
+
+Look-up results include vocalization, English translation, stem, word category and a morphological
+analysis. Morphological analysis and dictionary files that are used are
+based on the [Buckwalter Arabic Morphological Analyzer](http://www.qamus.org/morphology.htm). Of course,
+a single look-up can retrieve more than one morphological match; it
+is left to the user to infer the correct match in the given context. This
+extension allows even beginners of Arabic to enjoy online content
+as soon as they start, while it unmistakenly saves advanced learner
+from having to look up a word manually in a dictionary whenever
+they find a word whose meaning or pronunciation is unknown.
+
+
+{% include figure.html
+    url='/images/fahm/screenshot.png'
+    alt='Screenshot showing Fahm in use in the Chrome Web Browser. The web site used as example is the Amiri font website'
+    caption='Screenshot showing Fahm in use in the Chrome Web Browser. The web site used as example is the <a href="">Amiri font website</a>'
+%}
+{% include figure.html
+    url='/images/fahm/several-entries.png'
+    caption='A single word can have several meaning and morphological analyses.'
+%}
+
+
+Contributions are most welcome ;) .
+
+
+<a href="https://github.com/malikolivier/fahm"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
