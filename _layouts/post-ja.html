@@ -14,5 +14,10 @@ layout: default-ja
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
+    <script>
+    var disqus_config = function () {
+        this.language = "ja";
+    };
+    </script>
   {% endif %}
 </article>
