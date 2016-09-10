@@ -2,6 +2,7 @@
 layout: post
 title:  "Trying out Jekyll"
 date:   2016-09-09 11:33:34 +0900
+language: en
 categories: try jekyll
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+language: en
 ---
 
 Hello, my name is Malik, a software and language enthusiast living in Japan.

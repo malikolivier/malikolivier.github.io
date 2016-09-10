@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: default-ja
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Latest posts</h1>
+  <h1 class="page-heading">最新の投稿</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      {% if post.language == 'en' %}
+      {% if post.language == 'ja' %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ post.date | date: "%Y年%_m月%e日" }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
@@ -20,6 +20,6 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">RSSで<a href="{{ "/feed.xml" | prepend: site.baseurl }}">フォロー</a></p>
 
 </div>

@@ -14,10 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: YAPB, Yet Another Programming Blog
+title_ja: またプログラマーのブログなの？
+author: Malik Olivier Boussejra
+author_ja: 木本 真理究
 email: malik@boussejra.com
-description: > # this means to ignore newlines until "baseurl:"
-  Malik Oliver Boussejra's personal website. Write anything mostly about software engineering or
-  language learning.
+description: >
+  Malik Oliver Boussejra's personal website. Write anything mostly about
+  software engineering or language learning.
+description_ja: >
+  木本 真理究(まりく)の個人サイトです。ソフトウェア開発・言語学習などについていろいろ書いています。
+  ご精読ありがとうございます。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://boussejra.com" # the base hostname & protocol for your site
 twitter_username: malik_olivier
@@ -29,3 +35,13 @@ disqus:
 # Build settings
 markdown: kramdown
 theme: minima
+
+languages:
+    en:
+        name: English
+        url: ''
+        key: en
+    ja:
+        name: 日本語
+        url: ja
+        key: ja
