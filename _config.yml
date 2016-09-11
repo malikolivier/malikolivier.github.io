@@ -45,3 +45,5 @@ languages:
         name: 日本語
         url: ja
         key: ja
+gems:
+  - jekyll-redirect-from

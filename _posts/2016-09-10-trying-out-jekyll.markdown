@@ -3,7 +3,9 @@ layout: post
 title:  "Trying out Jekyll"
 date:   2016-09-09 11:33:34 +0900
 language: en
-categories: try jekyll
+keywords: programming try jekyll
+redirect_from:
+    - /try/jekyll/2016/09/09/trying-out-jekyll.html
 ---
 
 ## Making a simple to maintain blog

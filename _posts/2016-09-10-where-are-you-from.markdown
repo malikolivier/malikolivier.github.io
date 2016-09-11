@@ -3,7 +3,9 @@ layout: post-ja
 title:  "「どこ出身ですか？」という質問"
 date:   2016-09-11 00:10:34 +0900
 language: ja
-categories: 出身
+keywords: 出身
+redirect_from:
+    - /出身/2016/09/10/where-are-you-from.html
 ---
 
 ## 知らない人に「どこ出身ですか？」とは聞いてもいいですか？

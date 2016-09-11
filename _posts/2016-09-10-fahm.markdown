@@ -3,7 +3,9 @@ layout: post
 title:  "Fahm: An Arabic Pop-up Dictionary"
 date:   2016-09-10 12:10:34 +0900
 language: en
-categories: fahm arabic pop-up dictionary
+keywords: programming fahm arabic pop-up dictionary
+redirect_from:
+    - /fahm/arabic/pop-up/dictionary/2016/09/10/fahm.html
 ---
 
 ## An Arabic Pop-up dictionary
