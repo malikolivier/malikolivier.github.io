@@ -9,6 +9,7 @@ keywords: programming dynamodb
 
 - Query time and number of items in a table are independent.
 - NoSQL.
+- ソシャゲー スピードを求める
 
 ## Some code snippets for Node
 
