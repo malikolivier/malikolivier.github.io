@@ -2,4 +2,55 @@
 layout: default
 permalink: /404.html
 ---
-Nothing here
+<link rel="stylesheet" href="{{ "/css/xterm.css" | prepend: site.baseurl }}">
+
+<div id="terminal-container"></div>
+<br>
+<div class="alert alert-warning">
+    <p>
+    Page not found.
+    </p><p>
+    If you think there should be a page here, please contact <a href="mailto:{{site.email}}">{{site.email}}</a>.
+    </p>
+    <p>We invite you to go to back the <a href="/">home page</a>.</p>
+</div>
+
+<div class="alert alert-warning">
+    <p>
+    ページは見つからなかった。
+    </p>
+    <p>
+    こっちの間違いだと思うなら、<a href="mailto:{{site.email}}">{{site.email}}</a>までご連絡ください。よろしくお願いします。
+    </p>
+    <p><a href="/ja">ホームページ</a>に戻ってください。</p>
+</div>
+
+<script type="text/javascript" src="{{ "/js/xterm/xterm.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/xterm/fit.js" | prepend: site.baseurl }}"></script>
+<script>
+var terminalContainer = document.getElementById('terminal-container');
+var term = new Terminal();
+term.open(terminalContainer);
+term.fit();
+var url = '{{ site.url }}';
+var domainName = url.split('//')[1];
+term.writeln('you@my-pc:~$ wget {{ site.url }}{{ page.url }}');
+term.write('Resolving '+domainName+' ('+domainName+')...');
+term.writeln(' 192.30.252.153');
+term.write('Connecting to '+domainName+' ('+domainName+')|192.30.252.153|:80... ');
+term.writeln('connected.');
+term.write('HTTP request sent, awaiting response... ');
+term.writeln('404 Not Found');
+var now = new Date().toISOString().split('T');
+var date = now[0];
+var time = now[1].split('.')[0];
+term.writeln(date + ' ' + time + '  ERROR 404: Not Found.');
+term.writeln(' __   __        ______       __   __       ');
+term.writeln('/__/\\/__/\\     /_____/\\     /__/\\/__/\\     ');
+term.writeln('\\  \\ \\: \\ \\__  \\:::_ \\ \\    \\  \\ \\: \\ \\__  ');
+term.writeln(' \\::\\_\\::\\/_/\\  \\:\\ \\ \\ \\    \\::\\_\\::\\/_/\\ ');
+term.writeln('  \\_:::   __\\/   \\:\\ \\ \\ \\    \\_:::   __\\/ ');
+term.writeln('       \\::\\ \\     \\:\\_\\ \\ \\        \\::\\ \\  ');
+term.writeln('        \\__\\/      \\_____\\/         \\__\\/  ');
+term.writeln('                                           ');
+</script>
