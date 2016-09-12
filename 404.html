@@ -4,7 +4,7 @@ permalink: /404.html
 ---
 <link rel="stylesheet" href="{{ "/css/xterm.css" | prepend: site.baseurl }}">
 
-<div id="terminal-container"></div>
+<div id="terminal-container" style="font-size: 120%;"></div>
 <br>
 <div class="alert alert-warning">
     <p>
@@ -34,23 +34,45 @@ term.open(terminalContainer);
 term.fit();
 var url = '{{ site.url }}';
 var domainName = url.split('//')[1];
-term.writeln('you@my-pc:~$ wget {{ site.url }}{{ page.url }}');
-term.write('Resolving '+domainName+' ('+domainName+')...');
-term.writeln(' 192.30.252.153');
-term.write('Connecting to '+domainName+' ('+domainName+')|192.30.252.153|:80... ');
-term.writeln('connected.');
-term.write('HTTP request sent, awaiting response... ');
-term.writeln('404 Not Found');
+
+
 var now = new Date().toISOString().split('T');
 var date = now[0];
 var time = now[1].split('.')[0];
-term.writeln(date + ' ' + time + '  ERROR 404: Not Found.');
-term.writeln(' __   __        ______       __   __       ');
-term.writeln('/__/\\/__/\\     /_____/\\     /__/\\/__/\\     ');
-term.writeln('\\  \\ \\: \\ \\__  \\:::_ \\ \\    \\  \\ \\: \\ \\__  ');
-term.writeln(' \\::\\_\\::\\/_/\\  \\:\\ \\ \\ \\    \\::\\_\\::\\/_/\\ ');
-term.writeln('  \\_:::   __\\/   \\:\\ \\ \\ \\    \\_:::   __\\/ ');
-term.writeln('       \\::\\ \\     \\:\\_\\ \\ \\        \\::\\ \\  ');
-term.writeln('        \\__\\/      \\_____\\/         \\__\\/  ');
-term.writeln('                                           ');
+
+var speed = 0.1;
+var allWrites = [
+    { string: 'you@my-pc:~$ wget {{ site.url }}{{ page.url }}', ln: true, delay: 20 },
+    { string: 'Resolving '+domainName+' ('+domainName+')...', ln: false, delay: 50 },
+    { string: ' 192.30.252.153', ln: true, delay: 30 },
+    { string: 'Connecting to '+domainName+' ('+domainName+')|192.30.252.153|:80... ', ln: false, delay: 30 },
+    { string: 'connected.', ln: true, delay: 100 },
+    { string: 'HTTP request sent, awaiting response... ', ln: false, delay: 20 },
+    { string: '404 Not Found', ln: true, delay: 200 },
+    { string: date + ' ' + time + '  ERROR 404: Not Found.', ln: true, delay: 100 },
+    { string: ' __   __        ______       __   __       ', ln: true, delay: 20 },
+    { string: '/__/\\/__/\\     /_____/\\     /__/\\/__/\\     ', ln: true, delay: 20 },
+    { string: '\\  \\ \\: \\ \\__  \\:::_ \\ \\    \\  \\ \\: \\ \\__  ', ln: true, delay: 20 },
+    { string: ' \\::\\_\\::\\/_/\\  \\:\\ \\ \\ \\    \\::\\_\\::\\/_/\\ ', ln: true, delay: 20 },
+    { string: '  \\_:::   __\\/   \\:\\ \\ \\ \\    \\_:::   __\\/ ', ln: true, delay: 20 },
+    { string: '       \\::\\ \\     \\:\\_\\ \\ \\        \\::\\ \\  ', ln: true, delay: 20 },
+    { string: '        \\__\\/      \\_____\\/         \\__\\/  ', ln: true, delay: 20 },
+    { string: '                                           ', ln: true, delay: 20 }
+];
+
+function writeToTerminal(i) {
+    if (i < allWrites.length) {
+        var write = allWrites[i];
+        setTimeout(function() {
+            if (write.ln) {
+                term.writeln(write.string);
+            } else {
+                term.write(write.string);
+            }
+            writeToTerminal(i+1);
+        }, write.delay/speed);
+    }
+}
+writeToTerminal(0);
+
 </script>
