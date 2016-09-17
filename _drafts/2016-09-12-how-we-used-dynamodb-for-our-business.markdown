@@ -32,11 +32,59 @@ retrieval, thus sparing users from constant lag during the game.
 
 AWS provides two documentations:
 
-- [GettingStarted](http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.NodeJs.html): The bare minimum to survive in this hostile world. We would like to have more info though.
-- [The Exhaustive one](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html): This one in a torture to read. Though everything is there. However, no example, no code snippet. Only bare doc.
+- [GettingStarted](http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.NodeJs.html):
+The bare minimum to survive in this hostile world. We would like to have more info though.
+- [API specification](http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html):
+This one, though exhaustive, is very hard to read: no example, no code snippet.
+
+We will for example show how to get more than 1MB worth of documents.
+Indeed, DynamoDB will interrupt the request when 1MB documents or more are
+fetched.
+
+We will see as well how to format the query output to clean JSON.
+
+Though the AWS SDK is supplied in a variety of programming languages, we will be
+using Node.js for our examples.
+
+### Get data
+
+Let's suppose we have a `products` table, designed like this:
+
+| Table | Range Key | Range Key Type |
+| ----- | ----- | ----- |
+| products | productId | string (S) |
+
+```js
+var dynamodb = new AWS.DynamoDB();
+
+var params = {
+    TableName: "products",
+    KeyConditionExpression: "#id = :productId",
+    ExpressionAttributeNames: {
+        "#id": "productId"
+    },
+    ExpressionAttributeValues: {
+        ":productId": {
+            "S": productId
+        }
+    }
+};
+dynamodb.query(params, function(err, data) {
+    if (err) {
+      // Handle error
+    } else {
+      // Process data
+    }
+});
+```
+
+### Get data with conditions
 
 
-Get data recursively (more than 1000 documents).
+### Format output to clean JSON
+
+
+### Get data recursively for dataset larger than 1MB.
 
 
 ## DynamoDB Local
@@ -63,6 +111,12 @@ java -Djava.library.path=DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inM
 DYNAMODB_PID=$!
 echo "DynamoDB PID: $DYNAMODB_PID"
 trap "echo 'Killing DynamoDB with PID: $DYNAMODB_PID'; kill $DYNAMODB_PID" INT
+# We sleep 1 second to wait for DynamoDB to be up and ready.
 sleep 1s
+# Then we populate DynamoDB
 node populate-dynamodb-script.js
 ```
+
+We use `trap` to kill the DynamoDB process when SIGINT is sent to the shell process.
+If you do not do that, DynamoDB will go on running in the background for ever
+even when you push Ctrl-C.
