@@ -16,17 +16,24 @@ I am going to describe a few qualities of DynamoDB:
 - Query time depends only on the amount of fetched items. That means that if the
 - AWS charges on the number of write/read. Storage space is not taken into
 account.
+- Queries are extremely quick.
 
 The drawbacks:
 
-- Only two IDS
-- Writes are around 5 times more expensive that read
-- API may be hard to handle at the beginning
+- Only two kinds of keys with which query can be made: partition and sort keys.
+So querying with DynamoDB is quite limited.
+- Writes are around 5 times more expensive that reads.
+- API may be hard to handle at the beginning.
 
 Basically, if you have a huge amount of non-relational data that you want to
 query quickly, then DynamoDB is for you. DynamoDB is for example very popular in
 Japan within the mobile game industry, as it allows for lightning-quick data
 retrieval, thus sparing users from constant lag during the game.
+
+With DynamoDB, you can easily query by partition key more than 10000 elements
+(around 2MB of data) over the network in less than a second. And as said earlier,
+no matter how big is your dataset, query time is independent. Only the amount
+of matching keys matters.
 
 ## Some code snippets for Node
 
@@ -50,7 +57,7 @@ using Node.js for our examples.
 
 Let's suppose we have a **products** table, designed like this:
 
-| Table | Range Key | Range Key Type | Sort Key | Sort Key Type |
+| Table | Partition Key | Partition Key Type | Sort Key | Sort Key Type |
 | ----- | ----- | ----- | ----- | ----- |
 | products | productKey | string (S) | date | number (N) |
 
