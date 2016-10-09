@@ -162,72 +162,74 @@ module.exports={
         "zh": "我"
     },
     "ai": {
-        "en": "",
-        "zh": ""
+        "en": "have",
+        "zh": "有"
     },
     "déjà": {
-        "en": "",
-        "zh": ""
+        "en": "already",
+        "zh": "已经"
     },
     "les": {
-        "en": "",
+        "en": "the",
         "zh": ""
     },
     "papilles": {
-        "en": "",
-        "zh": ""
+        "en": "taste buds",
+        "zh": "味蕾"
     },
     "s'": {
-        "en": "",
-        "zh": ""
+        "en": "himself/herself/itself/themselves",
+        "zh": "自己"
     },
     "excitent": {
-        "en": "",
-        "zh": ""
+        "en": "be excited",
+        "zh": "兴奋"
     },
     "suis": {
-        "en": "",
-        "zh": ""
+        "en": "am",
+        "zh": "是"
     },
     "à": {
-        "en": "",
-        "zh": ""
+        "en": "at",
+        "zh": "在"
     },
     "la": {
-        "en": "",
+        "en": "the",
         "zh": ""
     },
-    "bourre,": {
-        "en": "",
-        "zh": ""
+    "bourre": {
+        "en": "lateness",
+        "zh": "延误",
+        "fr": "脏话"
     },
     "traîne": {
-        "en": "",
-        "zh": ""
+        "en": "behind (other people)",
+        "zh": "(别人)之后"
     },
     "ça": {
-        "en": "",
-        "zh": ""
+        "en": "it/this",
+        "zh": "它"
     },
     "fait": {
-        "en": "",
-        "zh": ""
+        "en": "do",
+        "zh": "做",
+        "fr": "e.g. ça fait + duration: it's been + duration"
     },
     "mois": {
-        "en": "",
-        "zh": ""
+        "en": "month",
+        "zh": "个月"
     },
     "qu'": {
         "en": "",
         "zh": ""
     },
     "l'": {
-        "en": "",
-        "zh": ""
+        "en": "it/him/her",
+        "zh": "这/他／她／它"
     },
     "a": {
-        "en": "",
-        "zh": ""
+        "en": "have",
+        "zh": "有"
     },
     "passées": {
         "en": "",
@@ -11111,7 +11113,7 @@ $(document).ready(function() {
         if (e.target.className === 'trans') {
             var target = e.target;
             var word = target.innerHTML.toLowerCase();
-            var i18n = dictionary[word];
+            var i18n = dictionary[word] || dictionary[word + "'"];
             if (!i18n) {
                 console.error('Unknown word: ' + word);
             } else {
@@ -11120,7 +11122,6 @@ $(document).ready(function() {
                     tooltip += ' (' + i18n.fr + ')';
                 }
                 popUp.innerHTML = tooltip;
-                console.log(tooltip);
                 $(popUp).css({'top':e.clientY+10,'left':e.clientX});
             }
         }
