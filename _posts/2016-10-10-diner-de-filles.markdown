@@ -19,8 +19,8 @@ keywords: diner filles popup translation
 <div id="text">
 Il est huit heures, il faut que je me dépêche, je ne veux pas être en retard.
 Je sors ma robe de pimbêche qui m'attend au fond du placard.
-Ce soir c'est Sabine qui invite. On sera un petite dizaine.
-J'ai déjà les papilles qui s'excitent. Je suis à la bourre, je suis la traîne.
+Ce soir c'est Sabine qui invite. On sera une petite dizaine.
+J'ai déjà les papilles qui s'excitent. Je suis à la bourre, je suis à la traîne.
 Ça fait un mois qu'on l'a pas fait. Il s'en est passées bien des choses dans nos vies de femmes débordées.
 C'est pour ça que ce dîner s'impose. C'est comme une thérapie de groupe, une réunion pas ordinaire.
 Sabine a fait une bonne vieille soupe, c'est parti pour le grand bol d'air.
