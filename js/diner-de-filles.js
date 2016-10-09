@@ -97,16 +97,17 @@ module.exports={
         "zh": "我"
     },
     "attend": {
-        "en": "",
-        "zh": ""
+        "en": "wait",
+        "zh": "等"
     },
     "au": {
-        "en": "",
-        "zh": ""
+        "en": "in the",
+        "zh": "在",
+        "fr": "à le的略"
     },
     "fond": {
-        "en": "",
-        "zh": ""
+        "en": "depth, back",
+        "zh": "底"
     },
     "du": {
         "en": "",
