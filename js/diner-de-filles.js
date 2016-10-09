@@ -101,7 +101,7 @@ module.exports={
         "zh": "等"
     },
     "au": {
-        "en": "in the",
+        "en": "in the, at the",
         "zh": "在",
         "fr": "à le的略"
     },
@@ -110,56 +110,56 @@ module.exports={
         "zh": "底"
     },
     "du": {
-        "en": "",
-        "zh": ""
+        "en": "of the",
+        "zh": "的"
     },
     "placard": {
-        "en": "",
-        "zh": ""
+        "en": "closet",
+        "zh": "柜子"
     },
     "ce": {
-        "en": "",
-        "zh": ""
+        "en": "this",
+        "zh": "这"
     },
     "soir": {
-        "en": "",
-        "zh": ""
+        "en": "evening",
+        "zh": "晚上"
     },
     "c'": {
-        "en": "",
-        "zh": ""
+        "en": "this",
+        "zh": "这"
     },
     "sabine": {
-        "en": "",
-        "zh": ""
+        "en": "Sabine",
+        "zh": "女人的名"
     },
     "invite": {
-        "en": "",
-        "zh": ""
+        "en": "invite",
+        "zh": "邀请"
     },
     "on": {
-        "en": "",
-        "zh": ""
+        "en": "We",
+        "zh": "我们"
     },
     "sera": {
-        "en": "",
-        "zh": ""
+        "en": "will be",
+        "zh": "要"
     },
-    "un": {
-        "en": "",
-        "zh": ""
+    "une": {
+        "en": "a",
+        "zh": "一个"
     },
     "petite": {
-        "en": "",
-        "zh": ""
+        "en": "small",
+        "zh": "小"
     },
     "dizaine": {
-        "en": "",
-        "zh": ""
+        "en": "ten",
+        "zh": "十个"
     },
     "j'": {
-        "en": "",
-        "zh": ""
+        "en": "I",
+        "zh": "我"
     },
     "ai": {
         "en": "",
@@ -11109,7 +11109,6 @@ $(document).ready(function() {
 
     document.onmouseover = function(e) {
         if (e.target.className === 'trans') {
-            console.log(e);
             var target = e.target;
             var word = target.innerHTML.toLowerCase();
             var i18n = dictionary[word];
@@ -11121,7 +11120,8 @@ $(document).ready(function() {
                     tooltip += ' (' + i18n.fr + ')';
                 }
                 popUp.innerHTML = tooltip;
-                $(popUp).css({'top':e.pageY+10,'left':e.pageX});
+                console.log(tooltip);
+                $(popUp).css({'top':e.clientY+10,'left':e.clientX});
             }
         }
     };
