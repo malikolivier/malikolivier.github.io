@@ -458,50 +458,51 @@ module.exports={
         "zh": "喜欢，爱"
     },
     "quand": {
-        "en": "",
-        "zh": ""
+        "en": "when",
+        "zh": "...的时候"
     },
     "se": {
-        "en": "",
-        "zh": ""
+        "en": "oneself",
+        "zh": "自己"
     },
     "retrouve": {
-        "en": "",
-        "zh": ""
+        "en": "to meet (together)",
+        "zh": "集合",
+        "fr": "Se retrouver = 集合する"
     },
     "détaillant": {
-        "en": "",
-        "zh": ""
+        "en": "detailing",
+        "zh": "说详细"
     },
     "vos": {
-        "en": "",
-        "zh": ""
+        "en": "your",
+        "zh": "你们的"
     },
     "petites": {
-        "en": "",
-        "zh": ""
+        "en": "small",
+        "zh": "小"
     },
-    "personnes,": {
-        "en": "",
-        "zh": ""
+    "personnes": {
+        "en": "people",
+        "zh": "人们"
     },
     "boîte": {
-        "en": "",
-        "zh": ""
+        "en": "box",
+        "zh": "盒子"
     },
     "pandore": {
-        "en": "",
-        "zh": ""
+        "en": "Pandora",
+        "zh": "潘多拉"
     },
     "ouvre": {
-        "en": "",
-        "zh": ""
+        "en": "open",
+        "zh": "打开"
     },
     "véro": {
         "en": "",
-        "zh": ""
+        "zh": "女人的名字"
     },
-    "lance,": {
+    "lance": {
         "en": "",
         "zh": ""
     },
