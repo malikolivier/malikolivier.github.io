@@ -220,8 +220,9 @@ module.exports={
         "zh": "个月"
     },
     "qu'": {
-        "en": "",
-        "zh": ""
+        "en": "that",
+        "zh": "",
+        "fr": "que"
     },
     "l'": {
         "en": "it/him/her",
@@ -232,232 +233,229 @@ module.exports={
         "zh": "有"
     },
     "passées": {
-        "en": "",
-        "zh": ""
+        "en": "happened",
+        "zh": "发生"
     },
     "bien": {
-        "en": "",
-        "zh": ""
+        "en": "a lot",
+        "zh": "很多"
     },
     "des": {
-        "en": "",
-        "zh": ""
+        "en": "of, plural undefinide article",
+        "zh": "一些，的"
     },
     "choses": {
-        "en": "",
-        "zh": ""
+        "en": "things",
+        "zh": "东西"
     },
     "dans": {
-        "en": "",
-        "zh": ""
+        "en": "in",
+        "zh": "在...里"
     },
     "nos": {
-        "en": "",
-        "zh": ""
+        "en": "our",
+        "zh": "我们的"
     },
     "vies": {
-        "en": "",
-        "zh": ""
+        "en": "lives",
+        "zh": "生命"
     },
     "femmes": {
-        "en": "",
-        "zh": ""
+        "en": "women",
+        "zh": "女人"
     },
     "débordées": {
-        "en": "",
-        "zh": ""
+        "en": "too busy",
+        "zh": "太忙碌"
     },
     "pour": {
-        "en": "",
-        "zh": ""
+        "en": "for",
+        "zh": "为了，向"
     },
     "dîner": {
-        "en": "",
-        "zh": ""
+        "en": "dinner",
+        "zh": "晚饭"
     },
     "impose": {
-        "en": "",
-        "zh": ""
+        "en": "force/is nessary",
+        "zh": "必要"
     },
     "comme": {
-        "en": "",
-        "zh": ""
+        "en": "like, same as",
+        "zh": "像"
     },
     "une": {
-        "en": "",
-        "zh": ""
+        "en": "a",
+        "zh": "一个"
     },
     "thérapie": {
-        "en": "",
-        "zh": ""
+        "en": "therapy",
+        "zh": "疗法"
     },
     "groupe,": {
-        "en": "",
-        "zh": ""
+        "en": "group",
+        "zh": "群"
     },
     "réunion": {
-        "en": "",
-        "zh": ""
+        "en": "meeting",
+        "zh": "会议，集合"
     },
     "ordinaire": {
-        "en": "",
-        "zh": ""
+        "en": "ordinary",
+        "zh": "普通，常"
     },
     "bonne": {
-        "en": "",
-        "zh": ""
+        "en": "good",
+        "zh": "好"
     },
     "vieille": {
-        "en": "",
-        "zh": ""
+        "en": "old",
+        "zh": "老"
     },
     "soupe,": {
-        "en": "",
-        "zh": ""
+        "en": "soup",
+        "zh": "汤"
     },
     "parti": {
-        "en": "",
-        "zh": ""
+        "en": "departed, started",
+        "zh": "开始，出发",
+        "fr": "c'est parti pour = 开始"
     },
     "le": {
-        "en": "",
+        "en": "the",
         "zh": ""
     },
     "grand": {
-        "en": "",
-        "zh": ""
+        "en": "big，tall",
+        "zh": "大，高"
     },
     "bol": {
-        "en": "",
-        "zh": ""
+        "en": "bowl",
+        "zh": "碗",
+        "fr": "grand bol d'air = 大气碗，出门的意思"
     },
     "d'": {
-        "en": "",
-        "zh": ""
+        "en": "of",
+        "zh": "的"
     },
-    "air##": {
-        "en": "",
-        "zh": ""
+    "air": {
+        "en": "air",
+        "zh": "空气"
     },
-    "refrains": {
-        "en": "",
-        "zh": ""
-    },
-    "filles !": {
-        "en": "",
-        "zh": ""
-    },
-    "ordinaire,": {
-        "en": "",
-        "zh": ""
-    },
-    "salutaire": {
-        "en": "",
-        "zh": ""
-    },
-    "rubrique": {
-        "en": "",
-        "zh": ""
-    },
-    "faits": {
-        "en": "",
-        "zh": ""
-    },
-    "divers": {
-        "en": "",
-        "zh": ""
+    "refrain": {
+        "en": "chorus",
+        "zh": "副歌"
     },
     "filles": {
-        "en": "",
-        "zh": ""
+        "en": "girls",
+        "zh": "妹子"
+    },
+    "salutaire": {
+        "en": "describe something that saves someone",
+        "zh": "营救的"
+    },
+    "rubrique": {
+        "en": "section, column",
+        "zh": "栏目"
+    },
+    "faits": {
+        "en": "facts",
+        "zh": "事",
+        "fr": "fait divers = trivial news item，小事"
+    },
+    "divers": {
+        "en": "miscellaneous",
+        "zh": "杂七杂八"
     },
     "sans": {
-        "en": "",
-        "zh": ""
+        "en": "without",
+        "zh": "除非"
     },
     "vous": {
-        "en": "",
-        "zh": ""
+        "en": "you",
+        "zh": "你们"
     },
     "n'": {
-        "en": "",
-        "zh": ""
+        "en": "not",
+        "zh": "不"
     },
     "y": {
-        "en": "",
-        "zh": ""
+        "en": "about it",
+        "zh": "对这"
     },
     "puissiez": {
-        "en": "",
-        "zh": ""
+        "en": "can",
+        "zh": "可以",
+        "fr": "pouvoir (subjonctive)"
     },
     "rien": {
-        "en": "",
-        "zh": ""
+        "en": "nothing",
+        "zh": "没什么"
     },
-    "faire,": {
-        "en": "",
-        "zh": ""
+    "faire": {
+        "en": "do",
+        "zh": "做"
     },
-    "défendre,": {
-        "en": "",
-        "zh": ""
+    "défendre": {
+        "en": "defend, protect",
+        "zh": "保护"
     },
     "va": {
-        "en": "",
-        "zh": ""
+        "en": "to go, to be going to",
+        "zh": "去，要"
     },
     "tailler": {
-        "en": "",
-        "zh": ""
+        "en": "cut, attack (with a sword)",
+        "zh": "切"
     },
     "par": {
-        "en": "",
-        "zh": ""
+        "en": "from",
+        "zh": "从，被"
     },
     "derrière": {
-        "en": "",
-        "zh": ""
+        "en": "behind",
+        "zh": "后面"
     },
-    "ouh!": {
-        "en": "",
-        "zh": ""
+    "ouh": {
+        "en": "Oh",
+        "zh": "噢"
     },
-    "la!": {
-        "en": "",
-        "zh": ""
+    "la": {
+        "en": "la",
+        "zh": "啦"
     },
     "allez": {
-        "en": "",
-        "zh": ""
+        "en": "to go, to be going to",
+        "zh": "去，要"
     },
-    "prendre !": {
-        "en": "",
-        "zh": ""
+    "prendre": {
+        "en": "take",
+        "zh": "拿到，抓住",
+        "fr": "也可以时”喰らう”的意思"
     },
     "si": {
-        "en": "",
-        "zh": ""
+        "en": "if",
+        "zh": "如果"
     },
     "saviez": {
-        "en": "",
-        "zh": ""
+        "en": "knew",
+        "zh": "知道"
     },
     "petits": {
-        "en": "",
-        "zh": ""
+        "en": "small",
+        "zh": "小"
     },
     "bons": {
-        "en": "",
-        "zh": ""
+        "en": "good",
+        "zh": "好"
     },
     "hommes": {
-        "en": "",
-        "zh": ""
+        "en": "men",
+        "zh": "男人"
     },
     "aime": {
-        "en": "",
-        "zh": ""
+        "en": "like，love",
+        "zh": "喜欢，爱"
     },
     "quand": {
         "en": "",

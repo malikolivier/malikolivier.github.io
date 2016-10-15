@@ -25,7 +25,7 @@ J'ai déjà les papilles qui s'excitent. Je suis à la bourre, je suis à la tra
 C'est pour ça que ce dîner s'impose. C'est comme une thérapie de groupe, une réunion pas ordinaire.
 Sabine a fait une bonne vieille soupe, c'est parti pour le grand bol d'air.
 
-## Refrains
+Refrains:
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.
@@ -39,7 +39,7 @@ Alors on trouve une solution, plusieurs techniques d'épilations.
 Il lui faudra aussi un soin.
 Sabine amène le coq au vin.
 
-## Refrains
+Refrains:
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.
@@ -53,7 +53,7 @@ On lui dit toutes que c'est grotesque.
 Aurore elle n'a pas trouvé mieux que se taper un 82. Il est imberbe, sa peau est ferme, il sent le nescoute (?) et la crème.
 Elle retombe en adolescence, passe du champagne au malibu, elle nous fait rire quoi qu'on en pense si on mangeait le tiramisu.
 
-## Refrains
+Refrain:
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.
