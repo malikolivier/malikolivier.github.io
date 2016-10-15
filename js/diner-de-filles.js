@@ -11108,7 +11108,7 @@ $(document).ready(function() {
     text = wrapWords(text);
     article.append(addLineBreaks(text));
 
-    document.onmouseover = function(e) {
+    var onEvent = function(e) {
         if (e.target.className === 'trans') {
             var target = e.target;
             var word = target.innerHTML.toLowerCase();
@@ -11125,6 +11125,9 @@ $(document).ready(function() {
             }
         }
     };
+
+    document.ontouchstart = onEvent;
+    document.onmouseover = onEvent;
 });
 
 },{"./dictionary.json":1,"jquery":2}]},{},[3]);
