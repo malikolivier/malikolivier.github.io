@@ -16,6 +16,8 @@ keywords: diner filles popup translation
 
 <script src="/js/diner-de-filles.js"></script>
 
+A French song translated in Chinese with pop-ups.
+
 <div id="text">
 Il est huit heures, il faut que je me dépêche, je ne veux pas être en retard.
 Je sors ma robe de pimbêche qui m'attend au fond du placard.
@@ -25,7 +27,7 @@ J'ai déjà les papilles qui s'excitent. Je suis à la bourre, je suis à la tra
 C'est pour ça que ce dîner s'impose. C'est comme une thérapie de groupe, une réunion pas ordinaire.
 Sabine a fait une bonne vieille soupe, c'est parti pour le grand bol d'air.
 
-Refrains:
+Refrain :
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.
@@ -35,11 +37,11 @@ Ouh! la! la! Vous allez prendre !
 Si vous saviez nos petits bons hommes comme on vous aime quand on se retrouve.
 En détaillant vos petites personnes, c'est la boîte de Pandore qu'on ouvre.
 Véro se lance, tout de go, pour nous avouer l'inavouable. Elle nous parle des poils dans le dos de son amant le beau notable.
-Alors on trouve une solution, plusieurs techniques d'épilations.
+Alors on trouve une solution, plusieurs techniques d'épilation.
 Il lui faudra aussi un soin.
 Sabine amène le coq au vin.
 
-Refrains:
+Refrain :
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.
@@ -53,7 +55,7 @@ On lui dit toutes que c'est grotesque.
 Aurore elle n'a pas trouvé mieux que se taper un 82. Il est imberbe, sa peau est ferme, il sent le nescoute (?) et la crème.
 Elle retombe en adolescence, passe du champagne au malibu, elle nous fait rire quoi qu'on en pense si on mangeait le tiramisu.
 
-Refrain:
+Refrain :
 Un dîner de filles ! C'est pas un dîner ordinaire, un dîner de filles !
 Ça fait du bien c'est salutaire. Un dîner de filles ! C'est la rubrique des faits divers.
 Un dîner de fi-ille-es.

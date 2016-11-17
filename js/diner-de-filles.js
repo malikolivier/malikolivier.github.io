@@ -499,88 +499,90 @@ module.exports={
         "zh": "打开"
     },
     "véro": {
-        "en": "",
+        "en": "Vero",
         "zh": "女人的名字"
     },
     "lance": {
-        "en": "",
-        "zh": ""
+        "en": "starts",
+        "zh": "开始"
     },
     "tout": {
-        "en": "",
-        "zh": ""
+        "en": "all",
+        "zh": "全都"，
+        "fr": "tout de go = 直截了当"
     },
     "go,": {
-        "en": "",
-        "zh": ""
+        "en": "go",
+        "zh": "前进"，
+        "fr": "tout de go = 直截了当"
     },
     "nous": {
-        "en": "",
-        "zh": ""
+        "en": "we, us",
+        "zh": "我们"
     },
     "avouer": {
-        "en": "",
-        "zh": ""
+        "en": "confess",
+        "zh": "坦白"
     },
     "inavouable": {
-        "en": "",
-        "zh": ""
+        "en": "which cannot be confessed",
+        "zh": "不能坦白的，尴尬的"
     },
     "elle": {
-        "en": "",
-        "zh": ""
+        "en": "she",
+        "zh": "她"
     },
     "parle": {
-        "en": "",
-        "zh": ""
+        "en": "speaks",
+        "zh": "说"
     },
     "poils": {
-        "en": "",
-        "zh": ""
+        "en": "hairs",
+        "zh": "毛"
     },
     "dos": {
-        "en": "",
-        "zh": ""
+        "en": "back",
+        "zh": "背"
     },
     "son": {
-        "en": "",
-        "zh": ""
+        "en": "his/her",
+        "zh": "他的，她的"
     },
     "amant": {
-        "en": "",
-        "zh": ""
+        "en": "lover",
+        "zh": "情人"
     },
     "beau": {
-        "en": "",
-        "zh": ""
+        "en": "handsome",
+        "zh": "帅"
     },
     "notable": {
-        "en": "",
-        "zh": ""
+        "en": "dignitary",
+        "zh": "著名的"
     },
     "alors": {
-        "en": "",
-        "zh": ""
+        "en": "so，then",
+        "zh": "于是"
     },
     "trouve": {
-        "en": "",
-        "zh": ""
+        "en": "find",
+        "zh": "找到"
     },
     "solution,": {
-        "en": "",
-        "zh": ""
+        "en": "solution",
+        "zh": "解决"
     },
     "plusieurs": {
-        "en": "",
-        "zh": ""
+        "en": "several",
+        "zh": "多数"
     },
     "techniques": {
-        "en": "",
-        "zh": ""
+        "en": "techniques",
+        "zh": "技术"
     },
-    "épilations": {
-        "en": "",
-        "zh": ""
+    "épilation": {
+        "en": "epilation",
+        "zh": "脱毛"
     },
     "lui": {
         "en": "",
