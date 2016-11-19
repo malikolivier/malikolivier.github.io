@@ -70,11 +70,38 @@ content has probably been cached by your browser so that it does not need to
 reload a data from the web. Indeed, accessing a PC's internal storage is much
 faster than getting contents with an HTTP request.
 
+## Foobar
+
+*Foo* and *bar* are the widely used placeholder words used in code snippets and
+examples. When math-savvy people would use, *x* and *y*, computer geeks will
+use *foo* and *bar*, like in the following example:
+
+```c
+/* C code */
+
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+   char foo[6] = "Hello";
+   char bar[7] = "World!";
+   printf("%s %s\n", foo, bar);
+
+   return 0;
+}
+```
+
+The etymology of *foobar* is obscure, yet it seems (at least according to
+wikipedia) that the *FUBAR* acronym was a slang used during World War II (Fu\*\*ed
+Up Beyond All Recognition/Any Repair/All Reason). *Foo* is said to have been in
+used since circa 1900, and it is thus speculated that *bar* was added under the
+influence of WWII *FUBAR*.
+Whatever, if you need a third placeholder, *baz* should do the trick :).
+
+By the way, did you know that Japanese programmers usually uses *hoge* or
+*hogehoge* as a placeholder name?
+
 <!--
-### Foobar
-
-World War II slang (fucked up beyond all recognition/any repair/all reason) 
-
 ### Ping
 
 Comes from the sonar sound (ping!).
@@ -97,6 +124,8 @@ JavaScript [DMZ by getify](https://github.com/getify/You-Dont-Know-JS/blob/maste
 
 ### Buffer
 -->
+
+　
 
 Found a word that is not in the list? Comment below!
 
