@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Un Dîner de filles
+title: Un Dîner de filles — 妹子的晚饭
 language: en
 keywords: diner filles popup translation
 ---
