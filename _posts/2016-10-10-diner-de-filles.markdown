@@ -18,6 +18,10 @@ keywords: diner filles popup translation
 
 A French song translated in Chinese with pop-ups.
 
+Original song: [https://www.youtube.com/watch?v=4dF1jfFcQd8](https://www.youtube.com/watch?v=4dF1jfFcQd8)
+Somewhat, this kinda little known song made its way on Chinese playing lists of French songs.
+I share the lyrics here and the (rough) translation for my Chinese friends.
+
 ## Lyrics
 
 <div id="text">
