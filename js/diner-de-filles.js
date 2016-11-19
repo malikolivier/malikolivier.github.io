@@ -296,7 +296,7 @@ module.exports={
         "en": "therapy",
         "zh": "疗法"
     },
-    "groupe,": {
+    "groupe": {
         "en": "group",
         "zh": "群"
     },
@@ -316,7 +316,7 @@ module.exports={
         "en": "old",
         "zh": "老"
     },
-    "soupe,": {
+    "soupe": {
         "en": "soup",
         "zh": "汤"
     },
