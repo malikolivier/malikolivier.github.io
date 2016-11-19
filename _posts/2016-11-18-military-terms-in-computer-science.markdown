@@ -16,7 +16,7 @@ And when you must find the bug, you "debug", with a "debugger". Funny, right?
     caption='First actual case of bug being found.'
 %}
 
-You may know that as most break-through technology of the 20th century, computing
+You may know that as most technological breakthroughs of the 20th century, computing
 was first started by the military, as an answer to the necessary war effort.
 And here we are, computing still has several words whose use was limited to
 warfare or military strategies before their advent in computing.
