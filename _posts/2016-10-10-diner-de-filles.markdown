@@ -18,6 +18,8 @@ keywords: diner filles popup translation
 
 A French song translated in Chinese with pop-ups.
 
+## Lyrics
+
 <div id="text">
 Il est huit heures, il faut que je me dépêche, je ne veux pas être en retard.
 Je sors ma robe de pimbêche qui m'attend au fond du placard.
