@@ -602,7 +602,7 @@ module.exports={
     },
     "soin": {
         "en": "cure",
-        "zh": "医疗"
+        "zh": "治疗"
     },
     "amène": {
         "en": "bring",
