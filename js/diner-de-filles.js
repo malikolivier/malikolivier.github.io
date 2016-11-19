@@ -215,6 +215,10 @@ module.exports={
         "zh": "做",
         "fr": "e.g. ça fait + duration: it's been + duration"
     },
+    "un": {
+        "en": "a, an, one",
+        "zh": "一个"
+    },
     "mois": {
         "en": "month",
         "zh": "个月"
