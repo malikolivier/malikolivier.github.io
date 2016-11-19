@@ -52,7 +52,7 @@ Elle ne vit que pour sa carrière. Plus tard elle se trouvera un vieux.
 Josépha pourra voyager, tout ça aux frais de la princesse. Bien sûr un riche, tout bronzé.
 On lui dit toutes que c'est grotesque.
 
-Aurore elle n'a pas trouvé mieux que se taper un 82. Il est imberbe, sa peau est ferme, il sent le nescoute (?) et la crème.
+Aurore elle n'a pas trouvé mieux que se taper un 82. Il est imberbe, sa peau est ferme, il sent le Nesquik et la crème.
 Elle retombe en adolescence, passe du champagne au malibu, elle nous fait rire quoi qu'on en pense si on mangeait le tiramisu.
 
 Refrain :

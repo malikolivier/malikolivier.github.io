@@ -508,12 +508,12 @@ module.exports={
     },
     "tout": {
         "en": "all",
-        "zh": "全都"，
+        "zh": "全都",
         "fr": "tout de go = 直截了当"
     },
     "go,": {
         "en": "go",
-        "zh": "前进"，
+        "zh": "前进",
         "fr": "tout de go = 直截了当"
     },
     "nous": {
@@ -585,276 +585,261 @@ module.exports={
         "zh": "脱毛"
     },
     "lui": {
-        "en": "",
-        "zh": ""
+        "en": "to her, to him",
+        "zh": "对他，对她"
     },
     "faudra": {
-        "en": "",
-        "zh": ""
+        "en": "it will be needed",
+        "zh": "要需要"
     },
     "aussi": {
-        "en": "",
-        "zh": ""
+        "en": "too",
+        "zh": "也"
     },
     "soin": {
-        "en": "",
-        "zh": ""
+        "en": "cure",
+        "zh": "医疗"
     },
     "amène": {
-        "en": "",
-        "zh": ""
+        "en": "bring",
+        "zh": "带"
     },
     "coq": {
-        "en": "",
-        "zh": ""
+        "en": "rooster",
+        "zh": "公鸡",
+        "fr": "coq au vin: 葡萄酒鸡"
     },
-    "vin##": {
-        "en": "",
-        "zh": ""
+    "vin": {
+        "en": "wine",
+        "zh": "葡萄酒"
     },
-    "hey !": {
-        "en": "",
-        "zh": ""
-    },
-    "josépha,": {
-        "en": "",
-        "zh": ""
-    },
-    "problèmes": {
-        "en": "",
-        "zh": ""
-    },
-    "homme": {
-        "en": "",
-        "zh": ""
-    },
-    "et": {
-        "en": "",
-        "zh": ""
-    },
-    "tant": {
-        "en": "",
-        "zh": ""
-    },
-    "mieux": {
-        "en": "",
-        "zh": ""
-    },
-    "vit": {
-        "en": "",
-        "zh": ""
-    },
-    "sa": {
-        "en": "",
-        "zh": ""
-    },
-    "carrière": {
-        "en": "",
-        "zh": ""
-    },
-    "plus": {
-        "en": "",
-        "zh": ""
-    },
-    "tard": {
-        "en": "",
-        "zh": ""
-    },
-    "trouvera": {
-        "en": "",
-        "zh": ""
-    },
-    "vieux": {
-        "en": "",
-        "zh": ""
+    "hey": {
+        "en": "Hey",
+        "zh": "嘿"
     },
     "josépha": {
-        "en": "",
-        "zh": ""
+        "en": "Josepha",
+        "zh": "女人的名字"
+    },
+    "problèmes": {
+        "en": "problems",
+        "zh": "问题"
+    },
+    "homme": {
+        "en": "man",
+        "zh": "男人"
+    },
+    "et": {
+        "en": "and",
+        "zh": "和"
+    },
+    "tant": {
+        "en": "so (many, good)",
+        "zh": "这么，多么",
+        "fr": "tant mieux: 就好！"
+    },
+    "mieux": {
+        "en": "better",
+        "zh": "更好"
+    },
+    "vit": {
+        "en": "live",
+        "zh": "生活"
+    },
+    "sa": {
+        "en": "his/her",
+        "zh": "他的，她的"
+    },
+    "carrière": {
+        "en": "career",
+        "zh": "事业，生涯"
+    },
+    "plus": {
+        "en": "more",
+        "zh": "更"
+    },
+    "tard": {
+        "en": "late",
+        "zh": "晚"
+    },
+    "trouvera": {
+        "en": "will find",
+        "zh": "要找到"
+    },
+    "vieux": {
+        "en": "old",
+        "zh": "老的"
     },
     "pourra": {
-        "en": "",
-        "zh": ""
+        "en": "will be able to",
+        "zh": "会能"
     },
     "voyager,": {
-        "en": "",
-        "zh": ""
+        "en": "travel",
+        "zh": "旅游"
     },
     "aux": {
-        "en": "",
-        "zh": ""
+        "en": "at, to",
+        "zh": "对，用"
     },
     "frais": {
-        "en": "",
-        "zh": ""
+        "en": "expense",
+        "zh": "费用"
     },
     "princesse": {
-        "en": "",
-        "zh": ""
+        "en": "princess",
+        "zh": "王妃"
     },
     "sûr": {
-        "en": "",
-        "zh": ""
+        "en": "confident, sure",
+        "zh": "确信",
+        "fr": "Bien sûr: 当然"
     },
-    "riche,": {
-        "en": "",
-        "zh": ""
+    "riche": {
+        "en": "wealthy, rich",
+        "zh": "有钱"
     },
     "bronzé": {
-        "en": "",
-        "zh": ""
+        "en": "suntanned",
+        "zh": "晒黑的"
     },
     "dit": {
-        "en": "",
-        "zh": ""
+        "en": "say",
+        "zh": "说"
     },
     "toutes": {
-        "en": "",
-        "zh": ""
+        "en": "all (women)",
+        "zh": "都（女性）"
     },
     "grotesque": {
-        "en": "",
-        "zh": ""
+        "en": "ridiculous, ludicrous",
+        "zh": "可笑的"
     },
     "aurore": {
-        "en": "",
-        "zh": ""
+        "en": "Aurora",
+        "zh": "女人的名字，极光"
     },
     "trouvé": {
-        "en": "",
-        "zh": ""
+        "en": "found",
+        "zh": "找到了"
     },
     "taper": {
-        "en": "",
-        "zh": ""
+        "en": "hit, bang",
+        "zh": "打",
+        "fr": "se taper qqun: sleep with"
     },
-    "un 82": {
-        "en": "",
-        "zh": ""
+    "82": {
+        "en": "82 is the number of the Tarn-et-Garonne département",
+        "zh": "82是Tarn-et-Garonne的département（省）的号码"
     },
-    "imberbe,": {
-        "en": "",
-        "zh": ""
+    "imberbe": {
+        "en": "with no hair",
+        "zh": " 没有毛的"
     },
     "peau": {
-        "en": "",
-        "zh": ""
+        "en": "skin",
+        "zh": "皮肤"
     },
-    "ferme,": {
-        "en": "",
-        "zh": ""
+    "ferme": {
+        "en": "firm, solid",
+        "zh": "坚固的"
     },
     "sent": {
-        "en": "",
-        "zh": ""
+        "en": "smells",
+        "zh": "闻（有什么什么的味道）"
     },
-    "nescoute (?)": {
-        "en": "",
-        "zh": ""
+    "nesquik": {
+        "en": "Nesquik",
+        "zh": "一种巧克力粉的商标"
     },
     "crème": {
-        "en": "",
-        "zh": ""
+        "en": "cream",
+        "zh": "奶油"
     },
     "retombe": {
-        "en": "",
-        "zh": ""
+        "en": "fall back",
+        "zh": "后退"
     },
-    "adolescence,": {
-        "en": "",
-        "zh": ""
+    "adolescence": {
+        "en": "teenagehood",
+        "zh": "十几岁的时候"
     },
     "passe": {
-        "en": "",
-        "zh": ""
+        "en": "go, pass",
+        "zh": "过"
     },
     "champagne": {
-        "en": "",
-        "zh": ""
+        "en": "champagne",
+        "zh": "香槟酒"
     },
-    "malibu,": {
-        "en": "",
-        "zh": ""
+    "malibu": {
+        "en": "Malibu",
+        "zh": "马利布（一种椰子酒）"
     },
     "rire": {
-        "en": "",
-        "zh": ""
+        "en": "laugh",
+        "zh": "笑"
     },
     "quoi": {
-        "en": "",
-        "zh": ""
+        "en": "what, whatever",
+        "zh": "什么"
     },
     "pense": {
-        "en": "",
-        "zh": ""
+        "en": "think",
+        "zh": "想"
     },
     "mangeait": {
-        "en": "",
-        "zh": ""
+        "en": "ate",
+        "zh": "吃了"
     },
-    "tiramisu##": {
-        "en": "",
-        "zh": ""
-    },
-    "fi-": {
-        "en": "",
-        "zh": ""
-    },
-    "ille-": {
-        "en": "",
-        "zh": ""
-    },
-    "es": {
-        "en": "",
-        "zh": ""
+    "tiramisu": {
+        "en": "tiramisu",
+        "zh": "提拉米苏"
     },
     "regardé": {
-        "en": "",
-        "zh": ""
+        "en": "look at",
+        "zh": "看着"
     },
     "nombril": {
-        "en": "",
-        "zh": ""
+        "en": "navel",
+        "zh": "肚脐"
     },
     "refait": {
-        "en": "",
-        "zh": ""
+        "en": "did egain",
+        "zh": "再做一次",
+        "fr": "refaire le monde: 说得很多（再想一次这个世界）"
     },
     "monde": {
-        "en": "",
-        "zh": ""
+        "en": "world",
+        "zh": "世界"
     },
     "entier": {
-        "en": "",
-        "zh": ""
+        "en": "entire, whole",
+        "zh": "全都"
     },
     "déversé": {
-        "en": "",
-        "zh": ""
+        "en": "discharge, pour, unleash",
+        "zh": "流出"
     },
     "notre": {
-        "en": "",
-        "zh": ""
+        "en": "our",
+        "zh": "我们的"
     },
     "bile": {
-        "en": "",
-        "zh": ""
+        "en": "bile",
+        "zh": "胆汁"
     },
     "apéro": {
-        "en": "",
-        "zh": ""
+        "en": "pre-dinner drink",
+        "zh": "吃前喝酒的时候"
     },
     "jusqu'": {
-        "en": "",
-        "zh": ""
+        "en": "until",
+        "zh": "到...为止"
     },
     "café": {
-        "en": "",
-        "zh": ""
-    },
-    "filles !</": {
-        "en": "",
-        "zh": ""
+        "en": "coffee",
+        "zh": "咖啡"
     }
 }
 
