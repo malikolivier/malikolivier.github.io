@@ -101,16 +101,40 @@ Whatever, if you need a third placeholder, *baz* should do the trick :).
 By the way, did you know that Japanese programmers usually uses *hoge* or
 *hogehoge* as a placeholder name?
 
+## Ping
+
+```sh
+malik@my-pc:~/workspace/malikolivier.github.io$ ping -c 5 boussejra.com
+PING boussejra.com (192.30.252.153) 56(84) bytes of data.
+64 bytes from pages.github.com (192.30.252.153): icmp_seq=1 ttl=50 time=305 ms
+64 bytes from pages.github.com (192.30.252.153): icmp_seq=2 ttl=50 time=286 ms
+64 bytes from pages.github.com (192.30.252.153): icmp_seq=3 ttl=50 time=232 ms
+64 bytes from pages.github.com (192.30.252.153): icmp_seq=4 ttl=50 time=290 ms
+64 bytes from pages.github.com (192.30.252.153): icmp_seq=5 ttl=50 time=240 ms
+
+--- boussejra.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4004ms
+rtt min/avg/max/mdev = 232.139/270.924/305.335/28.924 ms
+```
+Phew, my blog may be online! Gamers might know ping because the use it to get a hint
+at the latency of the connection between their PC and the server. The `ping`
+command is mainly used as a diagnostic tool to check that a host is there in the
+network.
+
+Ping turned back later to be a vulnerability (the [Ping of Death](https://en.wikipedia.org/wiki/Ping_of_death)), though any
+modern system is unaffected by such an attack.
+
+Stating that ping is a jargon with military background may be a bit far fetched,
+but let us not forget that the name of the `ping` command comes from the sound
+made by a sonar (**PING!**). And who else but the military uses a sonar?
+(Probably a lot of persons, but [whatever](http://allthetropes.wikia.com/wiki/Did_Not_Do_the_Research).)
+
 <!--
-### Ping
-
-Comes from the sonar sound (ping!).
-
-### Radio button
+## Radio button
 
 https://en.wikipedia.org/wiki/Radio_button#/media/File:Car_Radio_of_Analog_Era.jpg
 
-### DMZ
+## DMZ
 
 Networking 
 
@@ -118,11 +142,11 @@ JavaScript [DMZ by getify](https://github.com/getify/You-Dont-Know-JS/blob/maste
 ```js
 ```
 
-### Hoisting
+## Hoisting
 
 <!--### Bus--><!--
 
-### Buffer
+## Buffer
 -->
 
 　
