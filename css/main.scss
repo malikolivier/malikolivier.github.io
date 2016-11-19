@@ -58,3 +58,15 @@ $on-laptop:        800px;
 }
 
 @import "table";
+
+figure {
+    width: 100%;
+}
+figure > img {
+    margin: 0 auto;
+    width: 90%;
+}
+figcaption {
+    text-align: center;
+    margin: 10px 0;
+}

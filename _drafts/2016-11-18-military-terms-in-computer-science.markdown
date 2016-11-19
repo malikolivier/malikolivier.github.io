@@ -22,9 +22,13 @@ And here we are, computing still has several words whose use was limited to
 warfare or military strategies before their advent in computing.
 
 
-### stage
+### Staging
 
-### cache
+The staging area originally means the area where military personnel is
+stationing before going to mission.
+
+
+### Cache
 
 ### deploy
 
