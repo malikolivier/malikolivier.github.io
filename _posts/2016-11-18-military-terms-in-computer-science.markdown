@@ -101,6 +101,21 @@ Whatever, if you need a third placeholder, *baz* should do the trick :).
 By the way, did you know that Japanese programmers usually uses *hoge* or
 *hogehoge* as a placeholder name?
 
+## DMZ
+
+A DMZ (De-Militarized Zone), apart from specifying a zone where no military action
+should be undergone (e.g. at the border of two countries at war), is a computing
+jargon which is used, as far as I know, in networking.
+
+In networking, the DMZ refers to the subnetwork that responds to request from
+the outside (public) but that also has access to private components. We could
+say it is the *middleman*.
+
+The most simple use case of a DMZ may be with a web application server fetching
+user data from a database. The web app server itself is in the DMZ and
+accessible by the public while the private database server containing sensitive
+data is not publicly accessible.
+
 ## Ping
 
 ```sh
@@ -133,14 +148,6 @@ made by a sonar (**PING!**). And who else but the military uses a sonar?
 ## Radio button
 
 https://en.wikipedia.org/wiki/Radio_button#/media/File:Car_Radio_of_Analog_Era.jpg
-
-## DMZ
-
-Networking 
-
-JavaScript [DMZ by getify](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md#safer-this)
-```js
-```
 
 ## Hoisting
 
