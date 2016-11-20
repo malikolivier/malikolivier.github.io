@@ -33,7 +33,8 @@ There dictionary says:
 In computer science, it is used in several contexts. The mainly known use for
 contemporary programmer is probably the staging environment.
 Before an application is deployed into production, most businesses (hopefully)
-will thoroughly check/test the program before sending it to production use.
+will thoroughly check/test the program in a staging environment before sending
+it to production use.
 Before sending anything into production, it should be *battle*-tested.
 
 Staging area is a term used in the hugely popular VCS [Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics).

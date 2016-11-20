@@ -2,7 +2,7 @@
 layout: post
 title: 情報工学における軍隊が由来である用語
 language: ja
-keywords: computer science
+keywords: 情報工学
 ---
 
 情報工学の専門用語の語源は基本的に面白い。
@@ -16,3 +16,20 @@ keywords: computer science
     url='/images/military/bug-grace-hopper.jpg'
     caption='グレース・ホッパー氏の実験ノード：テープで貼ってあるゴキブリを含んだ最初のバグ発見の報告'
 %}
+
+20世紀の主な技術発展の研究は軍が先に始まった。第二次世界大戦または冷戦に勝ち目を持つために
+情報工学も軍が初めて研究を進んできた。故に由来が軍の戦略まで遡る専門用語は情報工学の中に僅かにある。
+
+## ステージング
+
+ステージングエリアはもともと英語で軍の集結地を表している。
+ちなみに、英英辞書によるとstageという動詞には以下の意味がある：
+
+*"Stage: To move (as military personnel, supplies, or equipment) to or establish in a new base in preparation for a further movement or a planned operation."* —Webster's Third New International Dictionary
+
+訳すと「Stage: 計画された行動または次の作戦の準備のため、兵員・食糧・装備を新しい基地に移動する」といういみだそうである。
+
+情報工学において、ステージングを使用する場合は多様である。一番有名なのは、ステージング環境ではないかと思う。
+プロダクションに送る前に、企業は一般的にちゃんとステージング環境でアプリをテストするはずだ。
+なぜなら、戦争に勝ち目のない装備は邪魔に過ぎない。
+
