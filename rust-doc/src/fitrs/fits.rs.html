@@ -1103,19 +1103,73 @@
 <span id="1046">1046</span>
 <span id="1047">1047</span>
 <span id="1048">1048</span>
+<span id="1049">1049</span>
+<span id="1050">1050</span>
+<span id="1051">1051</span>
+<span id="1052">1052</span>
+<span id="1053">1053</span>
+<span id="1054">1054</span>
+<span id="1055">1055</span>
+<span id="1056">1056</span>
+<span id="1057">1057</span>
+<span id="1058">1058</span>
+<span id="1059">1059</span>
+<span id="1060">1060</span>
+<span id="1061">1061</span>
+<span id="1062">1062</span>
+<span id="1063">1063</span>
+<span id="1064">1064</span>
+<span id="1065">1065</span>
+<span id="1066">1066</span>
+<span id="1067">1067</span>
+<span id="1068">1068</span>
+<span id="1069">1069</span>
+<span id="1070">1070</span>
+<span id="1071">1071</span>
+<span id="1072">1072</span>
+<span id="1073">1073</span>
+<span id="1074">1074</span>
+<span id="1075">1075</span>
+<span id="1076">1076</span>
+<span id="1077">1077</span>
+<span id="1078">1078</span>
+<span id="1079">1079</span>
+<span id="1080">1080</span>
+<span id="1081">1081</span>
+<span id="1082">1082</span>
+<span id="1083">1083</span>
+<span id="1084">1084</span>
+<span id="1085">1085</span>
+<span id="1086">1086</span>
+<span id="1087">1087</span>
+<span id="1088">1088</span>
+<span id="1089">1089</span>
+<span id="1090">1090</span>
+<span id="1091">1091</span>
+<span id="1092">1092</span>
+<span id="1093">1093</span>
+<span id="1094">1094</span>
+<span id="1095">1095</span>
+<span id="1096">1096</span>
+<span id="1097">1097</span>
+<span id="1098">1098</span>
+<span id="1099">1099</span>
 </pre><pre class="rust ">
-<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">sync</span>::<span class="ident">atomic</span>::{<span class="ident">AtomicPtr</span>, <span class="ident">Ordering</span>};
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">fs</span>::<span class="ident">File</span>;
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">io</span>::{<span class="ident">Error</span>, <span class="ident">Read</span>, <span class="ident">Seek</span>, <span class="ident">SeekFrom</span>};
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">ops</span>::{<span class="ident">Index</span>, <span class="ident">IndexMut</span>};
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">result</span>::<span class="prelude-ty">Result</span>;
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">str</span>::{<span class="ident">FromStr</span>, <span class="ident">from_utf8</span>};
+<span class="kw">use</span> <span class="ident">std</span>::<span class="ident">sync</span>::<span class="ident">atomic</span>::{<span class="ident">AtomicPtr</span>, <span class="ident">Ordering</span>};
 <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">sync</span>::{<span class="ident">Arc</span>, <span class="ident">Mutex</span>, <span class="ident">MutexGuard</span>, <span class="ident">RwLock</span>};
 
 <span class="kw">use</span> <span class="ident">byteorder</span>::{<span class="ident">BigEndian</span>, <span class="ident">ReadBytesExt</span>};
 
 <span class="kw">type</span> <span class="ident">FileRc</span> <span class="op">=</span> <span class="ident">Arc</span><span class="op">&lt;</span><span class="ident">Mutex</span><span class="op">&lt;</span><span class="ident">File</span><span class="op">&gt;&gt;</span>;
 
+<span class="doccomment">/// Represent an open FITS file.</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// Implement caching. Thread-safe.</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Fits</span> {
     <span class="ident">file</span>: <span class="ident">FileRc</span>,
@@ -1123,7 +1177,7 @@
     <span class="ident">total_hdu_count</span>: <span class="ident">RwLock</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">usize</span><span class="op">&gt;&gt;</span>,
 }
 
-
+<span class="doccomment">/// We must release the Hdu cache!</span>
 <span class="kw">impl</span> <span class="ident">Drop</span> <span class="kw">for</span> <span class="ident">Fits</span> {
     <span class="kw">fn</span> <span class="ident">drop</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>) {
         <span class="kw">use</span> <span class="ident">std</span>::<span class="ident">ptr</span>;
@@ -1132,23 +1186,31 @@
     }
 }
 
+<span class="doccomment">/// An iterator over [`Hdu`]s. Obtained from a consumed [`Fits`] object.</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FitsIntoIter</span> {
     <span class="ident">fits</span>: <span class="ident">Fits</span>,
     <span class="ident">position</span>: <span class="ident">u64</span>,
 }
 
+<span class="doccomment">/// An iterator over references to [`Hdu`]s.</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// Use caching to avoid rereading the same data from file.</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FitsIter</span><span class="op">&lt;</span><span class="lifetime">&#39;f</span><span class="op">&gt;</span> {
     <span class="ident">fits</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;f</span> <span class="ident">Fits</span>,
     <span class="ident">position</span>: <span class="ident">u64</span>,
     <span class="ident">count</span>: <span class="ident">usize</span>,
 }
 
+<span class="doccomment">/// An iterator over mutable references to [`Hdu`]s.</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// Use caching to avoid rereading the same data from file.</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FitsIterMut</span><span class="op">&lt;</span><span class="lifetime">&#39;f</span><span class="op">&gt;</span> {
     <span class="ident">fits</span>: <span class="kw-2">&amp;</span><span class="lifetime">&#39;f</span> <span class="kw-2">mut</span> <span class="ident">Fits</span>,
     <span class="ident">position</span>: <span class="ident">u64</span>,
     <span class="ident">count</span>: <span class="ident">usize</span>,
 }
 
+<span class="doccomment">/// Represent an HDU as defined in [FITS standard 4.1](https://archive.stsci.edu/fits/fits_standard/node13.html#SECTION00810000000000000000).</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">Hdu</span> {
     <span class="ident">header</span>: <span class="ident">Vec</span><span class="op">&lt;</span>(<span class="ident">HeaderKeyWord</span>, <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">HeaderValueComment</span><span class="op">&gt;</span>)<span class="op">&gt;</span>,
@@ -1158,6 +1220,9 @@
     <span class="ident">data</span>: <span class="ident">RwLock</span><span class="op">&lt;</span><span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">FitsData</span><span class="op">&gt;&gt;</span>,
 }
 
+<span class="doccomment">/// Represent a data array inside an [`Hdu`].</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// Follows data representation as defined in [FITS standard 6](https://archive.stsci.edu/fits/fits_standard/node42.html#SECTION001000000000000000000).</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">FitsData</span> {
     <span class="ident">Characters</span>(<span class="ident">FitsDataArray</span><span class="op">&lt;</span><span class="ident">char</span><span class="op">&gt;</span>),
@@ -1167,9 +1232,15 @@
     <span class="ident">FloatingPoint64</span>(<span class="ident">FitsDataArray</span><span class="op">&lt;</span><span class="ident">f64</span><span class="op">&gt;</span>),
 }
 
+<span class="doccomment">/// Actual array data inside the [`Hdu`]</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">Debug</span>)]</span>
 <span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">FitsDataArray</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span> {
+    <span class="doccomment">/// Shape of array.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// Example: A 2D image of width `w` and height `h` will be stored here as</span>
+    <span class="doccomment">/// `[w, h]`.</span>
     <span class="kw">pub</span> <span class="ident">shape</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">usize</span><span class="op">&gt;</span>,
+    <span class="doccomment">/// Raw data stored in the [`Hdu`].</span>
     <span class="kw">pub</span> <span class="ident">data</span>: <span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">T</span><span class="op">&gt;</span>,
 }
 
@@ -1190,6 +1261,9 @@
     <span class="ident">comment</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">HeaderComment</span><span class="op">&gt;</span>,
 }
 
+<span class="doccomment">/// Value stored inside the [`Hdu`] header.</span>
+<span class="doccomment">///</span>
+<span class="doccomment">/// As defined in [FITS standard 5.2](https://archive.stsci.edu/fits/fits_standard/node30.html#SECTION00920000000000000000).</span>
 <span class="attribute">#[<span class="ident">derive</span>(<span class="ident">PartialEq</span>, <span class="ident">Debug</span>)]</span>
 <span class="kw">pub</span> <span class="kw">enum</span> <span class="ident">HeaderValue</span> {
     <span class="ident">CharacterString</span>(<span class="ident">String</span>),
@@ -1205,7 +1279,7 @@
 <span class="kw">struct</span> <span class="ident">CardImage</span>([<span class="ident">u8</span>; <span class="number">80</span>]);
 
 <span class="kw">impl</span> <span class="ident">Fits</span> {
-    <span class="doccomment">/// Open FITS file given in provided path</span>
+    <span class="doccomment">/// Open FITS file given in provided path.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">open</span>(<span class="ident">path</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Result</span><span class="op">&lt;</span><span class="ident">Fits</span>, <span class="ident">Error</span><span class="op">&gt;</span> {
         <span class="ident">File</span>::<span class="ident">open</span>(<span class="ident">path</span>).<span class="ident">map</span>(<span class="op">|</span><span class="ident">file</span><span class="op">|</span> <span class="ident">Fits</span> {
             <span class="ident">file</span>: <span class="ident">Arc</span>::<span class="ident">new</span>(<span class="ident">Mutex</span>::<span class="ident">new</span>(<span class="ident">file</span>)),
@@ -1214,6 +1288,7 @@
         })
     }
 
+    <span class="doccomment">/// Iterate over references to [`Hdu`]s.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">iter</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">FitsIter</span> {
         <span class="ident">FitsIter</span> {
             <span class="ident">fits</span>: <span class="self">self</span>,
@@ -1222,6 +1297,7 @@
         }
     }
 
+    <span class="doccomment">/// Iterate over mutable references to [`Hdu`]s.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">iter_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">FitsIterMut</span> {
         <span class="ident">FitsIterMut</span> {
             <span class="ident">fits</span>: <span class="self">self</span>,
@@ -1230,12 +1306,16 @@
         }
     }
 
+    <span class="doccomment">/// Force-read the whole FITS file and cache it.</span>
+    <span class="doccomment">///</span>
+    <span class="doccomment">/// Beware of the size of the file you are loading before doing that.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">load_all</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) {
         <span class="kw">for</span> <span class="ident">hdu</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter</span>() {
             <span class="ident">hdu</span>.<span class="ident">read_data</span>();
         }
     }
 
+    <span class="doccomment">/// Get reference to [`Hdu`] by index. Use `0` for primary HDU.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">get</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">index</span>: <span class="ident">usize</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">Hdu</span><span class="op">&gt;</span> {
         <span class="kw">for</span> (<span class="ident">i</span>, <span class="ident">hdu</span>) <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter</span>().<span class="ident">enumerate</span>() {
             <span class="kw">if</span> <span class="ident">i</span> <span class="op">==</span> <span class="ident">index</span> {
@@ -1245,6 +1325,7 @@
         <span class="prelude-val">None</span>
     }
 
+    <span class="doccomment">/// Get mutable reference to [`Hdu`] by index. Use `0` for primary HDU.</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">get_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">index</span>: <span class="ident">usize</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">Hdu</span><span class="op">&gt;</span> {
         <span class="kw">for</span> (<span class="ident">i</span>, <span class="ident">hdu</span>) <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter_mut</span>().<span class="ident">enumerate</span>() {
             <span class="kw">if</span> <span class="ident">i</span> <span class="op">==</span> <span class="ident">index</span> {
@@ -1254,6 +1335,7 @@
         <span class="prelude-val">None</span>
     }
 
+    <span class="doccomment">/// Get reference to [`Hdu`] by `EXTNAME`. Defined in [FIST standard 5.4.2.6](https://archive.stsci.edu/fits/fits_standard/node40.html#SECTION00942000000000000000)</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">get_by_name</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">index</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">Hdu</span><span class="op">&gt;</span> {
         <span class="kw">let</span> <span class="ident">value</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">HeaderValue</span>::<span class="ident">CharacterString</span>(<span class="ident">String</span>::<span class="ident">from</span>(<span class="ident">index</span>)));
         <span class="kw">for</span> <span class="ident">hdu</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter</span>() {
@@ -1264,6 +1346,7 @@
         <span class="prelude-val">None</span>
     }
 
+    <span class="doccomment">/// Get mutable reference to [`Hdu`] by `EXTNAME`. Defined in [FIST standard 5.4.2.6](https://archive.stsci.edu/fits/fits_standard/node40.html#SECTION00942000000000000000)</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">get_mut_by_name</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">index</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">Hdu</span><span class="op">&gt;</span> {
         <span class="kw">let</span> <span class="ident">value</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">HeaderValue</span>::<span class="ident">CharacterString</span>(<span class="ident">String</span>::<span class="ident">from</span>(<span class="ident">index</span>)));
         <span class="kw">for</span> <span class="ident">hdu</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter_mut</span>() {
@@ -1274,13 +1357,18 @@
         <span class="prelude-val">None</span>
     }
 
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">hdus_guard</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">MutexGuard</span><span class="op">&lt;</span><span class="ident">AtomicPtr</span><span class="op">&lt;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Hdu</span><span class="op">&gt;&gt;</span><span class="op">&gt;</span> {
+    <span class="kw">fn</span> <span class="ident">hdus_guard</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">MutexGuard</span><span class="op">&lt;</span><span class="ident">AtomicPtr</span><span class="op">&lt;</span><span class="ident">Vec</span><span class="op">&lt;</span><span class="ident">Hdu</span><span class="op">&gt;&gt;</span><span class="op">&gt;</span> {
         <span class="self">self</span>.<span class="ident">hdus</span>.<span class="ident">lock</span>().<span class="ident">unwrap</span>()
     }
 }
 
+<span class="doccomment">/// </span>
 <span class="kw">impl</span> <span class="ident">Index</span><span class="op">&lt;</span><span class="ident">usize</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Fits</span> {
+    <span class="doccomment">/// [`Hdu`] at index.</span>
     <span class="kw">type</span> <span class="ident">Output</span> <span class="op">=</span> <span class="ident">Hdu</span>;
+    <span class="doccomment">/// Get [`Hdu`] by index. Panic if index is larger than the number of</span>
+    <span class="doccomment">/// [`Hdu`]s.</span>
+    <span class="doccomment">/// Prefer [`Fits::get`] if you need to check.</span>
     <span class="kw">fn</span> <span class="ident">index</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">index</span>: <span class="ident">usize</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="self">Self</span>::<span class="ident">Output</span> {
         <span class="kw">for</span> (<span class="ident">i</span>, <span class="ident">hdu</span>) <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter</span>().<span class="ident">enumerate</span>() {
             <span class="kw">if</span> <span class="ident">i</span> <span class="op">==</span> <span class="ident">index</span> {
@@ -1292,6 +1380,9 @@
 }
 
 <span class="kw">impl</span> <span class="ident">IndexMut</span><span class="op">&lt;</span><span class="ident">usize</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Fits</span> {
+    <span class="doccomment">/// Get mutable [`Hdu`] by index.</span>
+    <span class="doccomment">/// Panic if index is larger than the number of [`Hdu`]s.</span>
+    <span class="doccomment">/// Prefer [`Fits::get_mut`] if you need to check.</span>
     <span class="kw">fn</span> <span class="ident">index_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">index</span>: <span class="ident">usize</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="ident">Hdu</span> {
         <span class="kw">for</span> (<span class="ident">i</span>, <span class="ident">hdu</span>) <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter_mut</span>().<span class="ident">enumerate</span>() {
             <span class="kw">if</span> <span class="ident">i</span> <span class="op">==</span> <span class="ident">index</span> {
@@ -1302,8 +1393,13 @@
     }
 }
 
+<span class="doccomment">///</span>
 <span class="kw">impl</span><span class="op">&lt;</span><span class="lifetime">&#39;s</span><span class="op">&gt;</span> <span class="ident">Index</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="lifetime">&#39;s</span> <span class="ident">str</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Fits</span> {
+    <span class="doccomment">/// [`Hdu`] with provided `EXTNAME`.</span>
     <span class="kw">type</span> <span class="ident">Output</span> <span class="op">=</span> <span class="ident">Hdu</span>;
+    <span class="doccomment">/// Get [`Hdu`] by `EXTNAME`.</span>
+    <span class="doccomment">/// Panic if `EXTNAME` is not found.</span>
+    <span class="doccomment">/// Prefer [`Fits::get_by_name`] if you need to check.</span>
     <span class="kw">fn</span> <span class="ident">index</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">index</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="self">Self</span>::<span class="ident">Output</span> {
         <span class="kw">let</span> <span class="ident">value</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">HeaderValue</span>::<span class="ident">CharacterString</span>(<span class="ident">String</span>::<span class="ident">from</span>(<span class="ident">index</span>)));
         <span class="kw">for</span> <span class="ident">hdu</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter</span>() {
@@ -1316,6 +1412,9 @@
 }
 
 <span class="kw">impl</span><span class="op">&lt;</span><span class="lifetime">&#39;s</span><span class="op">&gt;</span> <span class="ident">IndexMut</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="lifetime">&#39;s</span> <span class="ident">str</span><span class="op">&gt;</span> <span class="kw">for</span> <span class="ident">Fits</span> {
+    <span class="doccomment">/// Get mutable [`Hdu`] by `EXTNAME`.</span>
+    <span class="doccomment">/// Panic if `EXTNAME` is not found.</span>
+    <span class="doccomment">/// Prefer [`Fits::get_mut_by_name`] if you need to check.</span>
     <span class="kw">fn</span> <span class="ident">index_mut</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">self</span>, <span class="ident">index</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="self">Self</span>::<span class="ident">Output</span> {
         <span class="kw">let</span> <span class="ident">value</span> <span class="op">=</span> <span class="prelude-val">Some</span>(<span class="ident">HeaderValue</span>::<span class="ident">CharacterString</span>(<span class="ident">String</span>::<span class="ident">from</span>(<span class="ident">index</span>)));
         <span class="kw">for</span> <span class="ident">hdu</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">iter_mut</span>() {
@@ -1327,6 +1426,7 @@
     }
 }
 
+<span class="doccomment">///</span>
 <span class="kw">impl</span> <span class="ident">IntoIterator</span> <span class="kw">for</span> <span class="ident">Fits</span> {
     <span class="kw">type</span> <span class="ident">Item</span> <span class="op">=</span> <span class="ident">Hdu</span>;
     <span class="kw">type</span> <span class="ident">IntoIter</span> <span class="op">=</span> <span class="ident">FitsIntoIter</span>;
@@ -1510,6 +1610,8 @@
 }
 
 <span class="kw">impl</span> <span class="ident">Hdu</span> {
+    <span class="doccomment">/// Get [`HeaderValue`] by key. Return [`None`] if value is not found</span>
+    <span class="doccomment">/// in [`Hdu`].</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">value</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">key</span>: <span class="kw-2">&amp;</span><span class="ident">str</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">HeaderValue</span><span class="op">&gt;</span> {
         <span class="kw">for</span> <span class="ident">line</span> <span class="kw">in</span> <span class="self">self</span>.<span class="ident">header</span>.<span class="ident">iter</span>() {
             <span class="kw">if</span> <span class="ident">line</span>.<span class="number">0</span> <span class="op">==</span> <span class="ident">key</span> {
@@ -1566,11 +1668,11 @@
         })
     }
 
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">is_data_cached</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">bool</span> {
+    <span class="kw">fn</span> <span class="ident">is_data_cached</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="ident">bool</span> {
         <span class="self">self</span>.<span class="ident">data</span>.<span class="ident">read</span>().<span class="ident">unwrap</span>().<span class="ident">is_some</span>()
     }
 
-    <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">data</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">FitsData</span><span class="op">&gt;</span> {
+    <span class="kw">fn</span> <span class="ident">data</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="kw-2">&amp;</span><span class="ident">FitsData</span><span class="op">&gt;</span> {
         <span class="kw">if</span> <span class="kw">let</span> <span class="prelude-val">Some</span>(<span class="kw-2">ref</span> <span class="ident">data</span>) <span class="op">=</span> <span class="kw-2">*</span><span class="self">self</span>.<span class="ident">data</span>.<span class="ident">read</span>().<span class="ident">unwrap</span>() {
             <span class="kw">let</span> <span class="ident">data</span> <span class="op">=</span> <span class="ident">data</span> <span class="kw">as</span> <span class="kw-2">*</span><span class="kw">const</span> <span class="ident">FitsData</span>;
             <span class="prelude-val">Some</span>(<span class="kw">unsafe</span> { <span class="kw-2">&amp;</span><span class="kw-2">*</span><span class="ident">data</span> })
@@ -1579,6 +1681,7 @@
         }
     }
 
+    <span class="doccomment">/// Get data array stored in the [`Hdu`].</span>
     <span class="kw">pub</span> <span class="kw">fn</span> <span class="ident">read_data</span>(<span class="kw-2">&amp;</span><span class="self">self</span>) <span class="op">-&gt;</span> <span class="kw-2">&amp;</span><span class="ident">FitsData</span> {
         <span class="kw">if</span> <span class="self">self</span>.<span class="ident">is_data_cached</span>() {
             <span class="self">self</span>.<span class="ident">data</span>().<span class="ident">unwrap</span>()
@@ -1656,11 +1759,10 @@
         <span class="kw">let</span> <span class="ident">naxis</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">naxis</span>().<span class="ident">expect</span>(<span class="string">&quot;Get NAXIS&quot;</span>);
         <span class="kw">let</span> <span class="ident">length</span> <span class="op">=</span> <span class="ident">naxis</span>.<span class="ident">iter</span>().<span class="ident">product</span>();
         <span class="kw">let</span> <span class="kw-2">mut</span> <span class="ident">file_lock</span> <span class="op">=</span> <span class="self">self</span>.<span class="ident">file</span>.<span class="ident">lock</span>().<span class="ident">expect</span>(<span class="string">&quot;Get file lock&quot;</span>);
-        <span class="ident">file_lock</span>.<span class="ident">seek</span>(<span class="ident">SeekFrom</span>::<span class="ident">Start</span>(<span class="self">self</span>.<span class="ident">data_start</span>)).<span class="ident">expect</span>(<span class="string">&quot;Set data position&quot;</span>);
-        <span class="ident">FitsDataArray</span>::<span class="ident">new</span>(
-            <span class="kw-2">&amp;</span><span class="ident">naxis</span>,
-            <span class="ident">read</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="kw-2">*</span><span class="ident">file_lock</span>, <span class="ident">length</span>),
-        )
+        <span class="ident">file_lock</span>
+            .<span class="ident">seek</span>(<span class="ident">SeekFrom</span>::<span class="ident">Start</span>(<span class="self">self</span>.<span class="ident">data_start</span>))
+            .<span class="ident">expect</span>(<span class="string">&quot;Set data position&quot;</span>);
+        <span class="ident">FitsDataArray</span>::<span class="ident">new</span>(<span class="kw-2">&amp;</span><span class="ident">naxis</span>, <span class="ident">read</span>(<span class="kw-2">&amp;</span><span class="kw-2">mut</span> <span class="kw-2">*</span><span class="ident">file_lock</span>, <span class="ident">length</span>))
     }
 }
 

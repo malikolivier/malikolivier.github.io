@@ -55,15 +55,93 @@
         </form>
     </nav>
 
-    <section id='main' class="content"><pre class="line-numbers"><span id="1">1</span>
-<span id="2">2</span>
-<span id="3">3</span>
-<span id="4">4</span>
+    <section id='main' class="content"><pre class="line-numbers"><span id="1"> 1</span>
+<span id="2"> 2</span>
+<span id="3"> 3</span>
+<span id="4"> 4</span>
+<span id="5"> 5</span>
+<span id="6"> 6</span>
+<span id="7"> 7</span>
+<span id="8"> 8</span>
+<span id="9"> 9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
 </pre><pre class="rust ">
+<span class="doccomment">//! Library to parse FITS file written in pure rust.</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! Uses only one dependency, [byteorder](../byteorder), to deal with endianness.</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! Uses intelligent cache to parse big FITS files. Developed for use in</span>
+<span class="doccomment">//! multi-threaded environments.</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! # How to use</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! ```rust,no_run</span>
+<span class="doccomment">//! extern crate fitrs;</span>
+<span class="doccomment">//! use fitrs::{Fits, FitsData, FitsDataArray};</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! let fits = Fits::open(&quot;path/to/fits/file.fits&quot;).expect(&quot;Failed to open&quot;);</span>
+<span class="doccomment">//! // Iterate over HDUs</span>
+<span class="doccomment">//! for hdu in fits.iter() {</span>
+<span class="doccomment">//!     println!(&quot;{:?}&quot;, hdu.value(&quot;EXTNAME&quot;));</span>
+<span class="doccomment">//!     println!(&quot;{:?}&quot;, hdu.read_data());</span>
+<span class="doccomment">//! }</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! // Get HDU by ID</span>
+<span class="doccomment">//! let hdu_2 = &amp;fits[2];</span>
+<span class="doccomment">//! // Get HDU by EXTNAME</span>
+<span class="doccomment">//! let hdu_flux = &amp;fits[&quot;FLUX&quot;];</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! match hdu_flux.read_data() {</span>
+<span class="doccomment">//!     &amp;FitsData::FloatingPoint32(FitsDataArray { ref shape, ref data }) =&gt; {</span>
+<span class="doccomment">//!         println!(&quot;{:?}&quot;, shape);</span>
+<span class="doccomment">//!         println!(&quot;{:?}&quot;, data);</span>
+<span class="doccomment">//!     }</span>
+<span class="doccomment">//!     _ =&gt; { /* ... */ }</span>
+<span class="doccomment">//! }</span>
+<span class="doccomment">//! ```</span>
+<span class="doccomment">//!</span>
+<span class="doccomment">//! A lot of possibly desirable functionalities are still missing.</span>
+<span class="doccomment">//! PR are welcome.</span>
+<span class="doccomment">//! Support for writing FITS file is planned.</span>
+
 <span class="kw">extern</span> <span class="kw">crate</span> <span class="ident">byteorder</span>;
 
 <span class="kw">mod</span> <span class="ident">fits</span>;
-<span class="kw">pub</span> <span class="kw">use</span> <span class="ident">fits</span>::{<span class="ident">Fits</span>, <span class="ident">FitsData</span>, <span class="ident">FitsDataArray</span>};
+<span class="kw">pub</span> <span class="kw">use</span> <span class="ident">fits</span>::{<span class="ident">Fits</span>, <span class="ident">FitsData</span>, <span class="ident">FitsDataArray</span>, <span class="ident">Hdu</span>, <span class="ident">HeaderValue</span>};
+<span class="kw">pub</span> <span class="kw">use</span> <span class="ident">fits</span>::{<span class="ident">FitsIntoIter</span>, <span class="ident">FitsIter</span>, <span class="ident">FitsIterMut</span>};
 </pre>
 </section>
     <section id='search' class="content hidden"></section>
