@@ -5,7 +5,7 @@ language: en
 keywords: programming rust lifetimes bow cow
 ---
 
-I hit a problem similar to what we the one below during my early days with rust:
+I hit a problem similar to the one below during my early days with rust:
 
 Here are the requirements (this is just one far-fetched example):
 
@@ -352,3 +352,6 @@ impl<'a> Space<'a> {
 
 As always, rust enforces us to make good design decision with our data
 structure!
+
+
+**NB:** This post inspired a crate: [boow](https://crates.io/crates/boow).
