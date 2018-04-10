@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["FitsData",""]],"struct":[["Fits",""],["FitsDataArray",""]]});
