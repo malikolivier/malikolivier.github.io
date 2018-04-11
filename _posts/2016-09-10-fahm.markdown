@@ -16,7 +16,8 @@ or [Zhongwen](https://chrome.google.com/webstore/detail/zhongwen-chinese-english
 for Japanese and Chinese.
 
 Arabic, like Japanese or Chinese has a writing system for which inferring the reading
-is not straightforward. I wanted to look up a word vocalization (the small pop)
+is not straightforward. I wanted a way to easily look up a word vocalization
+(i.e. via a small pop-up).
 
 As far as I know, such pop-up dictionary did not exist until I made
 [Fahm](https://chrome.google.com/webstore/detail/fahm-arabic-pop-up-dictio/nmndkfhbopdpiocgcfkmppalkfjjgehe) ("فهم", meaning "understanding"), an extension for Google Chrome.
