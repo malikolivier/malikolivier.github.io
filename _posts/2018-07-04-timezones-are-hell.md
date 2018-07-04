@@ -12,17 +12,17 @@ need to.
 After getting timezone issues, I started wishing that all countries switch
 to UTC!
 
-Alas, timezones, like many things, are hear to stay.
+Alas, timezones, like many things, are here to stay.
 Until the 19th century, each city had its own local time calculated from the
 sun's movements. However, interconnections between communities forced
 the people to agree on a common time, a.k.a a time zone.
 
-Unfortunately, as will all human aggreements, timezones do not correlate very
+Unfortunately, as with all human agreements, timezones do not correlate very
 well with natural phenomena, here, Earth's geometry.
-While both are continent-size contries, the US shares 5 timezones, while China
+While both are continent-size countries, the US shares 5 timezones, while China
 only has _one_ single timezone.
 Then some countries include energy-saving time changes. They even move 1 hour
-in some countries during specific periods (e.g. Morocco during the month of Ramadam).
+in some countries during specific periods (e.g. Morocco during the month of Ramadan).
 Or did you know that an island in the Pacific changed _date_ after its leaders
 decided to move to the other side of the international date-changing line?
 
@@ -92,7 +92,7 @@ def am_i_tzaware(dt):
 However, there is something you should never, never do (unless you know what
 you are doing): manually changing the `tzinfo` attribute of a datetime, either
 by setting the attribute or using the `replace` method. This **WILL NOT**
-do what you think it will do. You will get behaviour that 99.99% of people do
+do what you think it will do. You will get behavior that 99.99% of people do
 not want.
 
 Let's try:
@@ -116,10 +116,11 @@ Have you ever heard of a timezone named LMT+0:09:00???
 
 ## Deeper look into `pytz`
 
-Please explain what is this 9 minutes offset! If my program keeps on like this,
-calamity will happen.
+I know what you are thinking:
+"Please explain what is this 9 minutes offset! If my program keeps on like this,
+calamity will happen."
 
-Well, these are historical timezones (yes, they existed!). And people dealing
+Well, these are historical timezones (yes, [they existed](https://en.wikipedia.org/wiki/Local_mean_time)!). And people dealing
 with times from the first half of the 20th century may need them.
 
 `pytz` can actually deal with the timezones of almost any region after the 1900s.
@@ -135,8 +136,9 @@ the area.
 ```
 
 When you use the `now` function, the timezone object will update itself
-to use the correct offset that politics-driven prople chose at the current time
-in the selected region.
+to use the correct offset that politics-driven people happened to choose at the current time
+in the selected region. The timezone object will not be updated if you directly
+use it with the `tzinfo` attribute.
 But how do I convert the time to another timezone then?
 
 Here is what you can do with a `tzaware_localize` function:
@@ -175,7 +177,7 @@ datetime.datetime(2018, 7, 4, 1, 32, 32, 680085, tzinfo=<DstTzInfo 'Europe/Paris
 
 Basically, if you add timezone information to a timezone unaware datetime,
 please use the `localize` method of the datetime object.
-Please use `astimezone` if you want to convert a tzaware datetime to a
+Please use `astimezone` if you want to convert a tz-aware datetime to a
 different timezone.
 
 ## Python ecosystem
@@ -183,7 +185,7 @@ different timezone.
 As a side note to the Python world, numpy does not currently support
 timezone-aware datetimes at the time of writing, while pandas does!
 
-Though I would advise you to store and process all times as UTC. They should
+Though, I would advise you to store and process all times as UTC. They should
 only be converted when you need to show them to the user.
 
 Here is how you can convert a series to UTC tz-aware datetime in pandas:
@@ -207,9 +209,9 @@ PosgreSQL has two types to store datetimes:
 
 But don't be fooled. None of them actually *store* time zone information.
 
-A `TIMESTAMP WITHOUT TIME ZONE` is just used as is, while a
+A `TIMESTAMP WITHOUT TIME ZONE` is just what its namesake is, a timestamp without time zone, while a
 `TIMESTAMP WITH TIME ZONE` is implicitly converted to the connection's timezone
-everytime the value is read. That's the only different.
+everytime the value is read. That's the only difference.
 In term of data representation, they store the same thing.
 
 If the connection timezone is not set, a `TIMESTAMP WITH TIME ZONE` will be converted to whatever
@@ -235,7 +237,7 @@ post-war datetime).
 
 You should especially be cautious when dealing with dates! What date a timestamp
 falls on is dependent on the timezone!
-The date now is 2018-07-04 in Tokyo, but 2018-07-03 in New York.
+The date now is 2018-07-04 in Tokyo, but 2018-07-03 in New York. That's the previous day!
 
 ```sql
 SELECT * FROM my_table
@@ -248,7 +250,9 @@ do not forget to set the connection timezone appropriatly! If not, you may get
 surprises when you query the database!
 
 **NB:**
-- PostgreSQL actually has a TIMEZONE type. So if need be, you may store the timezone
+- You can store timezones as a separate column in a database.
+[SQLAlchemy-Utils even has a dedicated type](http://sqlalchemy-utils.readthedocs.io/en/latest/data_types.html#module-sqlalchemy_utils.types.timezone) for it!
+So if need be, you may store the timezone
 of a timestamp in another column.
 - If you ever need to explicitly convert to a specific timezones, you can use the
-"AT TIME ZONE" operator.
+"AT TIME ZONE" operator in PostgreSQL.
