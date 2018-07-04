@@ -251,4 +251,4 @@ surprises when you query the database!
 - PostgreSQL actually has a TIMEZONE type. So if need be, you may store the timezone
 of a timestamp in another column.
 - If you ever need to explicitly convert to a specific timezones, you can use the
-"AS TIME ZONE" operator.
+"AT TIME ZONE" operator.
