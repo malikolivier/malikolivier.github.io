@@ -114,7 +114,7 @@ WTF??? What the heck is this 9 minutes offset???
 Have you ever heard of a timezone named LMT+0:09:00???
 
 
-## Deeper look into `pytz`
+## Deeper look into [pytz](https://pythonhosted.org/pytz/)
 
 I know what you are thinking:
 "Please explain what is this 9 minutes offset! If my program keeps on like this,
@@ -256,3 +256,5 @@ So if need be, you may store the timezone
 of a timestamp in another column.
 - If you ever need to explicitly convert to a specific timezones, you can use the
 "AT TIME ZONE" operator in PostgreSQL.
+- If you are wondering how pytz knows which offset is used at what time in
+what area, they are using the official [Time Zone Database](https://github.com/eggert/tz).
