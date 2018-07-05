@@ -19,7 +19,7 @@ the people to agree on a common time, a.k.a a time zone.
 
 Unfortunately, as with all human agreements, timezones do not correlate very
 well with natural phenomena, here, Earth's geometry.
-While both are continent-size countries, the US shares 5 timezones, while China
+While both are continent-size countries, the US shares more than 5 timezones, while China
 only has _one_ single timezone.
 Then some countries include energy-saving time changes. They even move 1 hour
 in some countries during specific periods (e.g. Morocco during the month of Ramadan).
