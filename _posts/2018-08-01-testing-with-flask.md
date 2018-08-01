@@ -187,8 +187,8 @@ def db(app):
     # of the app object need to be loaded for everything to work smoothly. Ugh...
 
     # We clean up the database before running each unit test
-	_db.drop_all()
-	_db.create_all()
+    _db.drop_all()
+    _db.create_all()
 
     return _db
 ```
@@ -212,7 +212,7 @@ def my_model(db):
 
 ### Fixtures a bit more in depth
 
-I can hear you form here. **"But my tests are so zetta slow!!!"**
+I can hear you from here. **"But my tests are so zetta slow!!!"**
 
 Well, if you want your tests to be faster and if you cannot afford to use an
 in-memory SQLite DB for your tests, then the plumbing will have to get more
