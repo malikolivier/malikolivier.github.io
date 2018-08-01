@@ -154,7 +154,7 @@ from your_app import app as _app
 def app():
     # Append "_test" to the name of the DB used for tests
     db_uri = _app.config["SQLALCHEMY_DATABASE_URI"]
-	test_db_uri = f"{db_uri}_test"
+    test_db_uri = f"{db_uri}_test"
     _app.update(SQLALCHEMY_DATABASE_URI=test_db_uri)
 
     with _app.app_context():
