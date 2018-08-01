@@ -255,7 +255,7 @@ In my opinion, most fixtures for your models should obey this following pattern:
 
 1. Set up
 2. Yield
-3. Teard down
+3. Tear down
 
 Here is the result:
 
