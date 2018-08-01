@@ -27,7 +27,7 @@ the *way* for which there was no easy one-Google-search-away solution.
 That's when I met with Flask. God, did the world change.
 
 How should I do *X*? Well who knows? Is there any best practice?
-Well not really. Maybe something alike best practice specific to a flask
+Well not really. Maybe something alike best practice specific to Flask
 exists somewhere. I would like to be proven wrong.
 
 So I wanted to test a flask application.
