@@ -293,7 +293,7 @@ def session(db):
 
 	db.session.rollback()
 ```
-(Thanks to this this [SO post](https://stackoverflow.com/questions/26555125/rollback-transactions-not-working-with-py-test-and-flask#26624146))
+(Thanks to this [SO post](https://stackoverflow.com/questions/26555125/rollback-transactions-not-working-with-py-test-and-flask#26624146))
 
 If you do use the "session" fixture though, you will have to thoroughly use the
 session fixture in each of your tests that touch the DB. Beware of failures!
