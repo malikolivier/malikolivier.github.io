@@ -19,6 +19,9 @@ class JapanRainfallApp {
             { name: '中禅寺湖', lat: 36.7333, lon: 139.4833, prefecture: '栃木' },
             { name: '塩原温泉', lat: 36.9167, lon: 139.8667, prefecture: '栃木' },
             { name: '川上村', lat: 35.8667, lon: 138.5167, prefecture: '長野' },
+            { name: '奥志賀高原', lat: 36.7167, lon: 138.5167, prefecture: '長野' },
+            { name: '乙女高原', lat: 35.7833, lon: 138.7167, prefecture: '山梨' },
+            { name: '龍王峡', lat: 36.7833, lon: 139.7167, prefecture: '栃木' },
             { name: '只見', lat: 37.3833, lon: 139.3333, prefecture: '福島' },
             { name: '猪苗代', lat: 37.5500, lon: 140.1167, prefecture: '福島' },
             { name: '相馬', lat: 37.7972, lon: 140.9222, prefecture: '福島' },
@@ -49,10 +52,14 @@ class JapanRainfallApp {
             
             // Other major Japanese cities for context
             { name: '東京', lat: 35.6762, lon: 139.6503, prefecture: '東京都' },
+            { name: '長柄町', lat: 35.4167, lon: 140.1833, prefecture: '千葉' },
+            { name: '樹海', lat: 35.4667, lon: 138.6333, prefecture: '山梨' },
+            { name: '御前崎', lat: 34.6292, lon: 138.1267, prefecture: '静岡' },
             { name: '大阪', lat: 34.6937, lon: 135.5023, prefecture: '大阪府' },
             { name: '京都', lat: 35.0116, lon: 135.7681, prefecture: '京都府' },
             { name: '新潟', lat: 37.9026, lon: 139.0233, prefecture: '新潟' },
-            { name: '札幌', lat: 43.0642, lon: 141.3469, prefecture: '北海道' }
+            { name: '札幌', lat: 43.0642, lon: 141.3469, prefecture: '北海道' },
+            { name: '紋別', lat: 44.3556, lon: 143.3539, prefecture: '北海道' }
         ];
         
         this.map = null;
