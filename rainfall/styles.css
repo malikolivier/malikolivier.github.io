@@ -155,21 +155,21 @@ main {
 }
 
 .rainfall-marker.high {
-    background: #e17055;
+    background: #00b894;
 }
 
 .rainfall-marker.medium {
+    background: #74b9ff;
+}
+
+.rainfall-marker.low {
     background: #fdcb6e;
     color: #2d3436;
     text-shadow: none;
 }
 
-.rainfall-marker.low {
-    background: #00b894;
-}
-
 .rainfall-marker.none {
-    background: #74b9ff;
+    background: #e17055;
 }
 
 .regions-grid {
@@ -233,18 +233,18 @@ main {
 }
 
 .day-item.high-rain {
-    border-left-color: #e17055;
-    background: #ffeaa7;
+    border-left-color: #00b894;
+    background: #d1f2eb;
 }
 
 .day-item.medium-rain {
-    border-left-color: #fdcb6e;
-    background: #fff5cd;
+    border-left-color: #74b9ff;
+    background: #e3f2fd;
 }
 
 .day-item.low-rain {
-    border-left-color: #00b894;
-    background: #d1f2eb;
+    border-left-color: #fdcb6e;
+    background: #fff5cd;
 }
 
 .day-date {
