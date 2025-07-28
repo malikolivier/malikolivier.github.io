@@ -25,7 +25,7 @@ description_ja: >
   木本 真理究(まりく)の個人サイトです。ソフトウェア開発・言語学習などについていろいろ書いています。
   ご精読ありがとうございます。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://boussejra.com" # the base hostname & protocol for your site
+url: "https://boussejra.com" # the base hostname & protocol for your site
 twitter_username: malik_olivier
 github_username:  malikolivier
 google_analytics: UA-79560349-5
