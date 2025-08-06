@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malik Olivier Boussejra, PhD - Resume</title>
+    <title>木本真理究（マリク）博士 - 履歴書</title>
     <style>
         :root {
             --bg-color: #1a1a1a;
@@ -21,7 +21,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', Meiryo, sans-serif;
             font-weight: 500;
             line-height: 1.6;
             color: var(--text-color);
@@ -30,6 +30,35 @@
             margin: 0 auto;
             padding: 2rem;
             transition: all 0.3s ease;
+        }
+
+        .language-switcher {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
+        }
+
+        .lang-link {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-link:hover {
+            opacity: 0.8;
+        }
+
+        .lang-link.active {
+            background: var(--section-bg);
+            color: var(--text-color);
+            cursor: default;
         }
 
         .header {
@@ -186,36 +215,6 @@
             font-weight: 500;
         }
 
-        .language-switcher {
-            position: fixed;
-            top: 1rem;
-            right: 1rem;
-            display: flex;
-            gap: 0.5rem;
-            z-index: 1000;
-        }
-
-        .lang-link {
-            background: var(--accent-color);
-            color: white;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .lang-link:hover {
-            opacity: 0.8;
-        }
-
-        .lang-link.active {
-            background: var(--section-bg);
-            color: var(--text-color);
-            cursor: default;
-        }
-
-
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -239,7 +238,6 @@
                 top: 0.5rem;
                 right: 0.5rem;
             }
-
         }
 
         @media print {
@@ -249,7 +247,6 @@
                 padding: 1rem;
                 font-size: 0.9rem;
             }
-
 
             .language-switcher {
                 display: none;
@@ -264,13 +261,13 @@
 </head>
 <body>
     <div class="language-switcher">
-        <span class="lang-link active">English</span>
-        <a href="ja/" class="lang-link">日本語</a>
+        <a href="../" class="lang-link">English</a>
+        <span class="lang-link active">日本語</span>
     </div>
     
     <div class="header">
-        <h1 class="name">Malik Olivier Boussejra, PhD</h1>
-        <p class="title">Polyglot engineering manager and software engineer with 10+ years of professional experience in start-up environments. Seeking to leverage strong leadership skills and expertise to build product teams with highly motivated engineers.</p>
+        <h1 class="name">木本真理究（マリク）博士</h1>
+        <p class="title">スタートアップ環境での10年以上の経験を持つポリグロットエンジニア。優れたリーダーシップスキルと専門知識を活用し、やる気の高いエンジニアと共にプロダクトチームを構築することを目指しています。</p>
         <div class="contact-info">
             <a href="mailto:malik@boussejra.com" class="contact-item">malik@boussejra.com</a>
             <span class="contact-item">080-3752-8740</span>
@@ -279,158 +276,158 @@
     </div>
 
     <div class="section">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title">職歴</h2>
         
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Senior Engineering Manager</div>
-                    <div class="job-company">at Soracom, Tokyo 🇯🇵</div>
+                    <div class="job-title">シニアエンジニアリングマネージャー</div>
+                    <div class="job-company">株式会社ソラコム、東京 🇯🇵</div>
                 </div>
-                <div class="job-period">Feb 2023–Current</div>
+                <div class="job-period">2023年2月〜現在</div>
             </div>
             <div class="job-description">
-                Dedicated people manager of 3 teams of 5 engineers, each team working with different technologies on parts of the product. Joined at a time when Soracom was experiencing growing pains. Put into place structures to effectively grow the team from 36 to 50 engineers, leading to IPO in March 2024. In that time, hired several engineers with 100% retention rate, mentored new managers, grew a team lead into a managerial role and grew individual contributors into team lead roles. Ensured cross-functional communication with Business Development and Sales teams. Led reduction in technical debt for faster delivery.
+                プロダクトの異なる部分で様々な技術を扱う5名のエンジニアからなる3チームの責任者。ソラコムが成長痛を経験している時期に入社。チームを36名から50名に効果的に拡大する仕組みを構築し、2024年3月のIPOに貢献。この間、100%の定着率でエンジニアを数名採用、新任マネージャーのメンタリング、チームリーダーをマネージャー職に昇格、個人貢献者をチームリーダー職に昇格させた。事業開発チームおよび営業チームとの部門間コミュニケーションを確保。より迅速な提供のための技術的負債の削減をリード。
             </div>
-            <div class="technologies">Technologies routinely in use: AWS, Claude Code</div>
+            <div class="technologies">日常的に使用する技術：AWS、Claude Code</div>
         </div>
 
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">CTO</div>
-                    <div class="job-company">at Epigno, Tokyo 🇯🇵</div>
+                    <div class="job-title">CTO（最高技術責任者）</div>
+                    <div class="job-company">株式会社エピグノ、東京 🇯🇵</div>
                 </div>
-                <div class="job-period">Jun 2018–Feb 2023</div>
+                <div class="job-period">2018年6月〜2023年2月</div>
             </div>
             <div class="job-description">
-                Joined Epigno at founding as first developer and CTO. Designed, developed, coded and deployed the main products at Epigno from scratch—Epital HR (SaaS) and Epiope (on-premises). This includes customer hearing and crafting solutions to complex business problems, leading to strategic contracts with more than 20 medical enterprise customers. Hired and grew the engineering and design team from 1 to 20, through two rounds of funding (280M yen).
+                創設時に初の開発者兼CTOとしてエピグノに参画。エピグノの主力製品であるEpital HR（SaaS）およびEpiope（オンプレミス）をゼロから設計、開発、コーディング、デプロイ。顧客ヒアリングから複雑なビジネス課題の解決策を策定し、20社以上の医療企業との戦略的契約獲得に貢献。2回の資金調達（2億8000万円）を通じて、エンジニアリング・デザインチームを1名から20名に拡大。
                 <br><br>
-                Managed two agile engineering teams, one for each product, empowering every developer's performance and maximizing their contribution, by creating a culture of mutual trust, help and code hygiene. We implemented monthly 1on1s where we review each member's motivations, objectives and key results.
+                各プロダクトに1チームずつ、2つのアジャイルエンジニアリングチームを管理。相互信頼、サポート、コード品質の文化を創造することで、すべての開発者のパフォーマンスを向上させ、貢献度を最大化。月次1on1を実装し、各メンバーのモチベーション、目標、主要成果を確認。
             </div>
-            <div class="technologies">Technologies routinely in use: AWS, CI/CD, Property-Based Testing, PostgreSQL, VueJS, TypeScript, Rust, Docker, Laravel, Flask</div>
+            <div class="technologies">日常的に使用する技術：AWS、CI/CD、プロパティベーステスト、PostgreSQL、VueJS、TypeScript、Rust、Docker、Laravel、Flask</div>
         </div>
 
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Lead Engineer / Manager</div>
-                    <div class="job-company">at Symax, Tokyo 🇯🇵</div>
+                    <div class="job-title">リードエンジニア / マネージャー</div>
+                    <div class="job-company">サイマックス株式会社、東京 🇯🇵</div>
                 </div>
-                <div class="job-period">Dec 2015–Mar 2018</div>
+                <div class="job-period">2015年12月〜2018年3月</div>
             </div>
             <div class="job-description">
-                Served as hardware IoT team scrum master for a year. Tackled a wide variety of problems while managing a team in a fast-moving environment, from embedded programming to server-side, client-side and machine-learning solutions. In addition to pure engineering activities, work included the recruitment of engineers, communications and negotiations with outsourcing contractors and several factories for manufacturing.
+                1年間ハードウェアIoTチームのスクラムマスターを務めた。高速で変化する環境でチームを管理しながら、組み込みプログラミングからサーバーサイド、クライアントサイド、機械学習ソリューションまで幅広い問題に取り組んだ。純粋なエンジニアリング活動に加え、エンジニアの採用、外注業者とのコミュニケーション・交渉、製造のための複数工場との調整も担当。
             </div>
-            <div class="technologies">Mastered technologies: AWS, C, Node.js, Ruby-on-Rails, Yocto, scikit-learn, ST microcontrollers</div>
+            <div class="technologies">習得技術：AWS、C、Node.js、Ruby-on-Rails、Yocto、scikit-learn、STマイクロコントローラ</div>
         </div>
 
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Freelancing</div>
-                    <div class="job-company">Various Projects</div>
+                    <div class="job-title">フリーランス</div>
+                    <div class="job-company">各種プロジェクト</div>
                 </div>
-                <div class="job-period">Jul 2013–Mar 2016</div>
+                <div class="job-period">2013年7月〜2016年3月</div>
             </div>
             <div class="job-description">
-                Collaborated with overseas developers on a WebGL app for 3D scanner data visualization in Tianjin, China 🇨🇳.
+                中国天津で海外開発者と協力し、3DスキャナーデータビジュアライゼーションのためのWebGLアプリを開発。
                 <br>
-                Developed medical imaging software for nuclear medicine in Python, visualizing kidney/bone scintigraphy.
+                Pythonで核医学用の医療画像ソフトウェアを開発、腎臓・骨シンチグラフィーの可視化を実現。
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">学歴</h2>
         
         <div class="education-item">
             <div class="job-header">
                 <div>
-                    <div class="job-title">PhD of Science and Engineering in Computer Science</div>
-                    <div class="job-company">Keio University, Japan 🇯🇵</div>
+                    <div class="job-title">博士（理工学）情報工学専修</div>
+                    <div class="job-company">慶應義塾大学、日本 🇯🇵</div>
                 </div>
-                <div class="job-period">Sep 2016–Sep 2019</div>
+                <div class="job-period">2016年9月〜2019年9月</div>
             </div>
             <div class="job-description">
-                Thesis: "A visual programming approach to analyze multi-spectral astronomical data"
+                論文：「ビジュアルプログラミング・アプローチを用いた天文学における分光データ解析」
                 <br>
-                Project Page: <a href="https://github.com/aflak-vis/aflak" target="_blank" style="color: var(--accent-color);">github.com/aflak-vis/aflak</a>
+                プロジェクトページ：<a href="https://github.com/aflak-vis/aflak" target="_blank" style="color: var(--accent-color);">github.com/aflak-vis/aflak</a>
                 <br>
-                4 papers published
+                論文4本発表
             </div>
         </div>
 
         <div class="education-item">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Master of Science and Engineering in Computer Science</div>
-                    <div class="job-company">Keio University, Japan 🇯🇵</div>
+                    <div class="job-title">修士（理工学）情報工学専修</div>
+                    <div class="job-company">慶應義塾大学、日本 🇯🇵</div>
                 </div>
-                <div class="job-period">Sep 2014–Sep 2016</div>
+                <div class="job-period">2014年9月〜2016年9月</div>
             </div>
         </div>
 
         <div class="education-item">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Master of Generalist Engineering</div>
-                    <div class="job-company">École Centrale de Nantes, France 🇫🇷</div>
+                    <div class="job-title">総合工学修士</div>
+                    <div class="job-company">エコール・サントラル・ド・ナント、フランス 🇫🇷</div>
                 </div>
-                <div class="job-period">Sep 2012–Apr 2014</div>
+                <div class="job-period">2012年9月〜2014年4月</div>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2 class="section-title">Languages</h2>
+        <h2 class="section-title">言語能力</h2>
         <div class="languages-grid">
             <div class="language-item">
-                <div class="language-name">Japanese 🇯🇵</div>
-                <div>Full professional proficiency (JLPT N1)</div>
+                <div class="language-name">日本語 🇯🇵</div>
+                <div>ビジネスレベル（JLPT N1）</div>
             </div>
             <div class="language-item">
-                <div class="language-name">English 🇺🇸</div>
-                <div>Full professional proficiency</div>
+                <div class="language-name">英語 🇺🇸</div>
+                <div>ビジネスレベル</div>
             </div>
             <div class="language-item">
-                <div class="language-name">French 🇫🇷</div>
-                <div>Native language</div>
+                <div class="language-name">フランス語 🇫🇷</div>
+                <div>母国語</div>
             </div>
             <div class="language-item">
-                <div class="language-name">Chinese 🇨🇳</div>
-                <div>Working proficiency</div>
+                <div class="language-name">中国語 🇨🇳</div>
+                <div>日常会話レベル</div>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2 class="section-title">Computer Skills</h2>
+        <h2 class="section-title">コンピュータスキル</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h3>Software</h3>
-                <p>Git, Unix tools, Networking, Linux kernel and distro tinkering, LaTeX</p>
+                <h3>ソフトウェア</h3>
+                <p>Git、Unixツール、ネットワーク、Linuxカーネル・ディストロカスタマイズ、LaTeX</p>
             </div>
             <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <p>Rust, TypeScript, PHP, Python, C, Ruby, Go, Shell</p>
+                <h3>プログラミング言語</h3>
+                <p>Rust、TypeScript、PHP、Python、C、Ruby、Go、Shell</p>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2 class="section-title">Interests and Activities</h2>
+        <h2 class="section-title">興味・活動</h2>
         <div class="interests-list">
-            <span class="interest-item">Sciences</span>
-            <span class="interest-item">Astrophysics</span>
-            <span class="interest-item">Mycology</span>
-            <span class="interest-item">Beekeeping</span>
-            <span class="interest-item">Linguistics</span>
-            <span class="interest-item">Learning Languages (developer of <a href="#" style="color: var(--accent-color);">fahm</a>)</span>
-            <span class="interest-item">Free Software</span>
-            <span class="interest-item">Programming</span>
+            <span class="interest-item">科学</span>
+            <span class="interest-item">天体物理学</span>
+            <span class="interest-item">菌学</span>
+            <span class="interest-item">養蜂</span>
+            <span class="interest-item">言語学</span>
+            <span class="interest-item">語学学習（<a href="#" style="color: var(--accent-color);">fahm</a>の開発者）</span>
+            <span class="interest-item">フリーソフトウェア</span>
+            <span class="interest-item">プログラミング</span>
             <span class="interest-item">Linux</span>
-            <span class="interest-item">Open source contributor (e.g. <a href="#" style="color: var(--accent-color);">imgui-rs</a>)</span>
+            <span class="interest-item">オープンソース貢献（例：<a href="#" style="color: var(--accent-color);">imgui-rs</a>）</span>
         </div>
     </div>
 
