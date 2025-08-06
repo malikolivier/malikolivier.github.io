@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Olivier Boussejra, PhD - Resume</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --header-color: #ffffff;
+            --accent-color: #4da6ff;
+            --border-color: #404040;
+            --section-bg: #242424;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-weight: 500;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--header-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            max-width: 840px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--header-color);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .job, .education-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: var(--section-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--header-color);
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .job-period {
+            font-weight: 500;
+            color: var(--text-color);
+            opacity: 0.8;
+            white-space: nowrap;
+        }
+
+        .job-description {
+            margin-top: 1rem;
+            line-height: 1.7;
+        }
+
+        .technologies {
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background-color: var(--section-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .skill-category h3 {
+            font-weight: 700;
+            color: var(--header-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .language-item {
+            background-color: var(--section-bg);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .language-name {
+            font-weight: 700;
+            color: var(--header-color);
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .interest-item {
+            background-color: var(--section-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            font-weight: 500;
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+        }
+
+        @media print {
+            body {
+                max-width: none;
+                margin: 0;
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+
+
+            .job, .education-item, .skill-category, .language-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">Malik Olivier Boussejra, PhD</h1>
+        <p class="title">Polyglot engineering manager and software engineer with 10+ years of professional experience in start-up environments. Seeking to leverage strong leadership skills and expertise to build product teams with highly motivated engineers.</p>
+        <div class="contact-info">
+            <a href="mailto:malik@boussejra.com" class="contact-item">malik@boussejra.com</a>
+            <span class="contact-item">080-3752-8740</span>
+            <a href="https://github.com/malikolivier" class="contact-item" target="_blank">github.com/malikolivier</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Senior Engineering Manager</div>
+                    <div class="job-company">at Soracom, Tokyo 🇯🇵</div>
+                </div>
+                <div class="job-period">Feb 2023–Current</div>
+            </div>
+            <div class="job-description">
+                Dedicated people manager of 3 teams of 5 engineers, each team working with different technologies on parts of the product. Joined at a time when Soracom was experiencing growing pains. Put into place structures to effectively grow the team from 36 to 50 engineers, leading to IPO in March 2024. In that time, hired several engineers with 100% retention rate, mentored new managers, grew a team lead into a managerial role and grew individual contributors into team lead roles. Ensured cross-functional communication with Business Development and Sales teams. Led reduction in technical debt for faster delivery.
+            </div>
+            <div class="technologies">Technologies routinely in use: AWS, Claude Code</div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">CTO</div>
+                    <div class="job-company">at Epigno, Tokyo 🇯🇵</div>
+                </div>
+                <div class="job-period">Jun 2018–Feb 2023</div>
+            </div>
+            <div class="job-description">
+                Joined Epigno at founding as first developer and CTO. Designed, developed, coded and deployed the main products at Epigno from scratch—Epital HR (SaaS) and Epiope (on-premises). This includes customer hearing and crafting solutions to complex business problems, leading to strategic contracts with more than 20 medical enterprise customers. Hired and grew the engineering and design team from 1 to 20, through two rounds of funding (280M yen).
+                <br><br>
+                Managed two agile engineering teams, one for each product, empowering every developer's performance and maximizing their contribution, by creating a culture of mutual trust, help and code hygiene. We implemented monthly 1on1s where we review each member's motivations, objectives and key results.
+            </div>
+            <div class="technologies">Technologies routinely in use: AWS, CI/CD, Property-Based Testing, PostgreSQL, VueJS, TypeScript, Rust, Docker, Laravel, Flask</div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Lead Engineer / Manager</div>
+                    <div class="job-company">at Symax, Tokyo 🇯🇵</div>
+                </div>
+                <div class="job-period">Dec 2015–Mar 2018</div>
+            </div>
+            <div class="job-description">
+                Served as hardware IoT team scrum master for a year. Tackled a wide variety of problems while managing a team in a fast-moving environment, from embedded programming to server-side, client-side and machine-learning solutions. In addition to pure engineering activities, work included the recruitment of engineers, communications and negotiations with outsourcing contractors and several factories for manufacturing.
+            </div>
+            <div class="technologies">Mastered technologies: AWS, C, Node.js, Ruby-on-Rails, Yocto, scikit-learn, ST microcontrollers</div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Freelancing</div>
+                    <div class="job-company">Various Projects</div>
+                </div>
+                <div class="job-period">Jul 2013–Mar 2016</div>
+            </div>
+            <div class="job-description">
+                Collaborated with overseas developers on a WebGL app for 3D scanner data visualization in Tianjin, China 🇨🇳.
+                <br>
+                Developed medical imaging software for nuclear medicine in Python, visualizing kidney/bone scintigraphy.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">PhD of Science and Engineering in Computer Science</div>
+                    <div class="job-company">Keio University, Japan 🇯🇵</div>
+                </div>
+                <div class="job-period">Sep 2016–Sep 2019</div>
+            </div>
+            <div class="job-description">
+                Thesis: "Visual Programming Environment for Analysis of Multi-Spectral Astronomical Data"
+                <br>
+                Project Page: <a href="https://github.com/aflak-vis/aflak" target="_blank" style="color: var(--accent-color);">github.com/aflak-vis/aflak</a>
+                <br>
+                4 papers published
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Master of Science and Engineering in Computer Science</div>
+                    <div class="job-company">Keio University, Japan 🇯🇵</div>
+                </div>
+                <div class="job-period">Sep 2014–Sep 2016</div>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Master of Generalist Engineering</div>
+                    <div class="job-company">École Centrale de Nantes, France 🇫🇷</div>
+                </div>
+                <div class="job-period">Sep 2012–Apr 2014</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages-grid">
+            <div class="language-item">
+                <div class="language-name">English 🇺🇸</div>
+                <div>Full professional proficiency</div>
+            </div>
+            <div class="language-item">
+                <div class="language-name">French 🇫🇷</div>
+                <div>Native language</div>
+            </div>
+            <div class="language-item">
+                <div class="language-name">Japanese 🇯🇵</div>
+                <div>Full professional proficiency (JLPT N1)</div>
+            </div>
+            <div class="language-item">
+                <div class="language-name">Chinese 🇨🇳</div>
+                <div>Working proficiency</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Computer Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Software</h3>
+                <p>Git, Unix tools, Networking, Linux kernel and distro tinkering, LaTeX</p>
+            </div>
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <p>Rust, TypeScript, PHP, Python, C, Ruby, Go, Shell</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Interests and Activities</h2>
+        <div class="interests-list">
+            <span class="interest-item">Sciences</span>
+            <span class="interest-item">Astrophysics</span>
+            <span class="interest-item">Mycology</span>
+            <span class="interest-item">Beekeeping</span>
+            <span class="interest-item">Linguistics</span>
+            <span class="interest-item">Learning Languages (developer of <a href="#" style="color: var(--accent-color);">fahm</a>)</span>
+            <span class="interest-item">Free Software</span>
+            <span class="interest-item">Programming</span>
+            <span class="interest-item">Linux</span>
+            <span class="interest-item">Open source contributor (e.g. <a href="#" style="color: var(--accent-color);">imgui-rs</a>)</span>
+        </div>
+    </div>
+
+</body>
+</html>
