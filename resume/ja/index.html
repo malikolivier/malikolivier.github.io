@@ -72,6 +72,27 @@
             border-bottom: 2px solid var(--border-color);
         }
 
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .name-section {
+            text-align: left;
+        }
+
         .name {
             font-size: 2.5rem;
             font-weight: 700;
@@ -237,6 +258,20 @@
                 padding-top: 4rem;
             }
 
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .name-section {
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 70px;
+                height: 70px;
+            }
+
             .name {
                 font-size: 2rem;
             }
@@ -283,6 +318,25 @@
                 margin-bottom: 1.5rem;
                 padding-bottom: 1rem;
                 border-bottom: 2px solid #333;
+            }
+
+            .header-content {
+                margin-bottom: 0.8rem;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+
+            .profile-image {
+                width: 60px;
+                height: 60px;
+                border: 2px solid #333;
+            }
+
+            .name-section {
+                text-align: left;
             }
 
             .name {
@@ -441,7 +495,12 @@
     </div>
 
     <div class="header">
-        <h1 class="name">木本 <ruby>真理究<rt>まりく</rt></ruby><br><span>工学博士</span></h1>
+        <div class="header-content">
+            <img src="/resume/profile.jpg" alt="木本真理究" class="profile-image">
+            <div class="name-section">
+                <h1 class="name">木本 <ruby>真理究<rt>まりく</rt></ruby><br><span>工学博士</span></h1>
+            </div>
+        </div>
         <p class="title">スタートアップ環境での10年以上の経験を持つポリグロット・エンジニアリングマネージャー兼ソフトウェアエンジニア。優れたリーダーシップスキルと専門知識を活用し、モチベーションの高いエンジニアと共にプロダクトチームを構築することを目指しています。</p>
         <div class="contact-info">
             <a href="mailto:malik@boussejra.com" class="contact-item">malik@boussejra.com</a>
