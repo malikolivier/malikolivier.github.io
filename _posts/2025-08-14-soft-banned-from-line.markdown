@@ -11,6 +11,11 @@ In April 2025, I found myself on the receiving end of what can only be described
 
 On April 29th, 2025, I was suddenly greeted with an error message when trying to access my LINE account: "Authentication is temporarily restricted. Please try again after 60 days. [x3еA5_64]." No warning, no explanation, just an instant lockout from a service that had become integral to both my personal and professional life.
 
+{% include figure.html
+    url='/images/line/first-ban.png'
+    caption='The initial ban message that appeared without warning'
+%}
+
 Finding LINE's official support channels proved to be a challenge in itself—the company seems to deliberately obscure how users can contact them for help. After considerable searching, I finally managed to reach their customer support, only to receive a frustratingly generic response (translated from the original Japanese):
 
 > "Thank you for using LINE and related services. This is LINE Customer Support.
