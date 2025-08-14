@@ -5,6 +5,13 @@ language: en
 keywords: LINE messaging app platform ban user rights digital justice
 ---
 
+<style>
+img {
+    max-height: 600px;
+    object-fit: contain;
+}
+</style>
+
 In April 2025, I found myself on the receiving end of what can only be described as arbitrary platform justice when LINE, Japan's dominant messaging platform, soft-banned my account. What followed was a months-long ordeal that highlights the precarious nature of our dependence on digital platforms and the concerning lack of transparency in their enforcement actions.
 
 ## The Initial Ban
@@ -19,12 +26,15 @@ On April 29th, 2025, I was suddenly greeted with an error message when trying to
 Finding LINE's official support channels proved to be a challenge in itself—the company seems to deliberately obscure how users can contact them for help. After considerable searching, I finally managed to reach their customer support, only to receive a frustratingly generic response (translated from the original Japanese):
 
 > "Thank you for using LINE and related services. This is LINE Customer Support.
-> 
+>
 > Your service may have been suspended due to actions that violate the terms of service. The main criteria considered as violations of the terms of service are as follows:
-> 
+>
 > • Posting content that is not socially acceptable, such as abusive language, obscene materials, or other obscene expressions
+>
 > • Exchanging personal information (phone numbers, addresses, LINE IDs, etc.) or persistently soliciting or requesting one-on-one meetings
+>
 > • Illegal activities including prohibited drug transactions and illegal transactions such as stocks
+>
 > • Planning or soliciting unhealthy meetings or gatherings for minors"
 
 The response provided a generic list of potential violations but offered no indication of which, if any, of these categories supposedly applied to my case. This cookie-cutter approach to customer service only added to the frustration of an already opaque process.
@@ -42,18 +52,17 @@ This state has persisted for over three months now, effectively rendering my LIN
 
 ## Legal Action
 
-Given the significant impact on both my personal life and business operations, I decided to take legal action. My lawyer sent a formal notice to LINE Yahoo Corporation, citing several concerning issues:
+Given the significant impact on both my personal life and business operations, I decided to take legal action. On July 16th, 2025, my lawyer sent a formal notice to LINE Yahoo Corporation, citing several concerning issues[^1]:
 
 1. **Lack of transparency**: No specific reason was provided for the enforcement action
 2. **Potential privacy violations**: The action suggested improper monitoring of private communications
-3. **Discriminatory treatment**: Similar usage patterns by other users weren't subjected to the same restrictions
-4. **Breach of service contract**: The company failed to provide adequate justification for service termination
+3. **Breach of service contract**: While LINE is technically a free service and users may not be legally entitled to continued access, the platform's business model relies heavily on advertising revenue from users like myself. Given the extensive advertisements we encounter in the app and LINE's critical importance in Japanese society, there is a reasonable expectation that service should be provided consistently and fairly
 
 The legal notice also highlighted that LINE, with its 98 million monthly users in Japan, functions as critical social infrastructure, making arbitrary restrictions particularly problematic.
 
 ## LINE's Response
 
-LINE's response to the legal notice was disappointingly predictable and unhelpful. They merely stated that the account had violated section 15 of their common terms of service regarding "compliance matters when using our services," and that they would provide no further guidance on the matter.
+LINE's response to the legal notice was disappointingly predictable and unhelpful. We received their response on August 14th (dated August 7th in their printed letter). They merely stated that the account had violated section 15 of their common terms of service regarding "compliance matters when using our services," and that they would provide no further guidance on the matter.
 
 This response perfectly encapsulates the problem with platform governance today: companies wielding enormous power over users' digital lives while providing minimal accountability or transparency.
 
@@ -84,8 +93,14 @@ This experience has reinforced several important principles for digital life:
 
 ## Moving Forward
 
-While my LINE account remains in limbo, I've adapted by migrating to alternative communication platforms and ensuring better redundancy in my digital communications. However, the broader issues of platform accountability and user rights remain unresolved.
+While my LINE account remains in limbo, I've adapted by migrating to alternative communication platforms and ensuring better redundancy in my digital communications. However, this transition comes with its own challenges: I now need to explain to all my contacts that I am no longer reachable on LINE—a platform that nearly everyone in Japan uses as their primary communication method.
+
+Technically, I could potentially create a new LINE account with a new phone number, but why should I go through this hassle when I did nothing wrong? The principle matters. Obtaining a new phone number and re-establishing all my contacts shouldn't be necessary when the original enforcement action was unjustified and opaque.
+
+The broader issues of platform accountability and user rights remain unresolved.
 
 The tech industry often speaks about "moving fast and breaking things," but when those things include people's livelihoods and social connections, the human cost becomes unacceptable. As digital platforms become increasingly central to modern life, we need better frameworks for accountability, transparency, and user protection.
 
 Until then, we're all just one algorithmic decision away from digital exile.
+
+[^1]: As of this writing, my legal fees related to this case amount to about ¥120,000.
