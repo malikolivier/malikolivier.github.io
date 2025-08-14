@@ -97,11 +97,12 @@ While my LINE account remains in limbo, I've adapted by migrating to alternative
 
 Technically, I could potentially create a new LINE account with a new phone number, but why should I go through this hassle when I did nothing wrong? The principle matters. Obtaining a new phone number and re-establishing all my contacts shouldn't be necessary when the original enforcement action was unjustified and opaque.
 
-The broader issues of platform accountability and user rights remain unresolved.
+The broader issues of platform accountability and user rights remain unresolved. This represents the current status of my case as of August 2025. My legal battle with LINE continues, and I will keep readers posted about any developments. The fight for platform accountability and user rights is far from over.
 
 The tech industry often speaks about "moving fast and breaking things," but when those things include people's livelihoods and social connections, the human cost becomes unacceptable. As digital platforms become increasingly central to modern life, we need better frameworks for accountability, transparency, and user protection.
 
 Until then, we're all just one algorithmic decision away from digital exile.
+
 
 [^1]: As of this writing, my legal fees related to this case amount to about ¥120,000.
 
