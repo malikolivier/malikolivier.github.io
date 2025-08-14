@@ -33,6 +33,11 @@ The response provided a generic list of potential violations but offered no indi
 
 After the 60-day period expired on June 28th, I regained access to my account, but the damage was done. All of my chat history—years of conversations, important business communications, and personal memories—had been completely wiped. Worse still, I discovered I could no longer send messages. Every attempt was met with an error: "Message sending is temporarily restricted due to violation of terms of service."
 
+{% include figure.html
+    url='/images/line/cannot-send-messages.png'
+    caption='The persistent error message preventing any message sending'
+%}
+
 This state has persisted for over three months now, effectively rendering my LINE account useless for its primary purpose: communication.
 
 ## Legal Action
