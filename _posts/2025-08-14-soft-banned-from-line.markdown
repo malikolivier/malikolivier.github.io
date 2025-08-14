@@ -11,7 +11,18 @@ In April 2025, I found myself on the receiving end of what can only be described
 
 On April 29th, 2025, I was suddenly greeted with an error message when trying to access my LINE account: "Authentication is temporarily restricted. Please try again after 60 days. [x3еA5_64]." No warning, no explanation, just an instant lockout from a service that had become integral to both my personal and professional life.
 
-When I contacted LINE's customer support through their official channels, the response was frustratingly vague: they suggested my account might have been suspended due to "actions that violate the terms of service." However, they provided no specifics about what I had allegedly done wrong.
+Finding LINE's official support channels proved to be a challenge in itself—the company seems to deliberately obscure how users can contact them for help. After considerable searching, I finally managed to reach their customer support, only to receive a frustratingly generic response (translated from the original Japanese):
+
+> "Thank you for using LINE and related services. This is LINE Customer Support.
+> 
+> Your service may have been suspended due to actions that violate the terms of service. The main criteria considered as violations of the terms of service are as follows:
+> 
+> • Posting content that is not socially acceptable, such as abusive language, obscene materials, or other obscene expressions
+> • Exchanging personal information (phone numbers, addresses, LINE IDs, etc.) or persistently soliciting or requesting one-on-one meetings
+> • Illegal activities including prohibited drug transactions and illegal transactions such as stocks
+> • Planning or soliciting unhealthy meetings or gatherings for minors"
+
+The response provided a generic list of potential violations but offered no indication of which, if any, of these categories supposedly applied to my case. This cookie-cutter approach to customer service only added to the frustration of an already opaque process.
 
 ## The Partial Recovery
 
