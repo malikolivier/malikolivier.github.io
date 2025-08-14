@@ -62,7 +62,7 @@ The legal notice also highlighted that LINE, with its 98 million monthly users i
 
 ## LINE's Response
 
-LINE's response to the legal notice was disappointingly predictable and unhelpful. We received their response on August 14th (dated August 7th in their printed letter). They merely stated that the account had violated section 15 of their common terms of service regarding "compliance matters when using our services," and that they would provide no further guidance on the matter.
+LINE's response to the legal notice was disappointingly predictable and unhelpful. We received their response on August 14th (dated August 7th in their printed letter). They merely stated that the account had violated section 15 of their common terms of service[^3] regarding "compliance matters when using our services," and that they would provide no further guidance on the matter.
 
 This response perfectly encapsulates the problem with platform governance today: companies wielding enormous power over users' digital lives while providing minimal accountability or transparency.
 
@@ -107,3 +107,5 @@ Until then, we're all just one algorithmic decision away from digital exile.
 [^1]: As of this writing, my legal fees related to this case amount to about ¥120,000.
 
 [^2]: In some extreme cases, I even resorted to sending physical letters through snail mail to friends when I had no other contact details but knew their home addresses.
+
+[^3]: LINE Terms of Service: https://terms.line.me/line_terms?lang=en
