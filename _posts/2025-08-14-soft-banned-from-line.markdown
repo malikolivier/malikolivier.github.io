@@ -86,7 +86,7 @@ When platforms like LINE become essential infrastructure for daily communication
 
 This experience has reinforced several important principles for digital life:
 
-1. **Diversify communication channels**: Never rely solely on a single platform for critical communications
+1. **Diversify communication channels**: Never rely solely on a single platform for critical communications[^2]
 2. **Regular backups**: Export important data regularly, as platforms can and will delete your content without warning
 3. **Platform alternatives**: Maintain presence on multiple platforms to reduce dependency on any single service
 4. **Document everything**: Keep records of platform interactions and potential violations for legal protection
@@ -104,3 +104,5 @@ The tech industry often speaks about "moving fast and breaking things," but when
 Until then, we're all just one algorithmic decision away from digital exile.
 
 [^1]: As of this writing, my legal fees related to this case amount to about ¥120,000.
+
+[^2]: In some extreme cases, I even resorted to sending physical letters through snail mail to friends when I had no other contact details but knew their home addresses.
