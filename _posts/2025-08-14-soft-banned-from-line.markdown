@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Soft-Banned from LINE: A Tale of Arbitrary Platform Justice"
+title: "Soft-Banned from LINE"
 language: en
 keywords: LINE messaging app platform ban user rights digital justice
 ---

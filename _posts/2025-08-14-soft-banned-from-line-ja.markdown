@@ -1,6 +1,6 @@
 ---
 layout: post-ja
-title: "LINEからソフトバンされた話：恣意的なプラットフォーム正義の実例"
+title: "LINEからソフトバンされた話"
 language: ja
 keywords: LINE メッセージアプリ プラットフォーム BAN ユーザー権利 デジタル正義
 ---
