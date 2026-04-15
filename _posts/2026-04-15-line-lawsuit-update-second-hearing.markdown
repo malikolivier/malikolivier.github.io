@@ -5,7 +5,7 @@ language: en
 keywords: LINE lawsuit legal update hearing
 ---
 
-Another update on my [lawsuit against LINE](/2025/08/14/soft-banned-from-line.html). The second hearing took place on April 7, 2026.
+Another update on my [lawsuit against LINE](/2025/08/14/soft-banned-from-line.html). For new readers: in April 2025, LINE suspended my account without explanation and refused to provide any reason for it. The second hearing took place on April 7, 2026.
 
 The court re-organized the issues into three claims:
 
