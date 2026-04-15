@@ -12,7 +12,7 @@ img {
 }
 </style>
 
-In April 2025, I found myself on the receiving end of what can only be described as arbitrary platform justice when LINE, Japan's dominant messaging platform, soft-banned my account. What followed was a months-long ordeal that highlights the precarious nature of our dependence on digital platforms and the concerning lack of transparency in their enforcement actions.
+In April 2025, LINE soft-banned my account with no warning and no explanation. Here's what happened and where things stand.
 
 ## The Initial Ban
 
@@ -37,7 +37,7 @@ Finding LINE's official support channels proved to be a challenge in itself—th
 >
 > • Planning or soliciting unhealthy meetings or gatherings for minors"
 
-The response provided a generic list of potential violations but offered no indication of which, if any, of these categories supposedly applied to my case. This cookie-cutter approach to customer service only added to the frustration of an already opaque process.
+The response provided a generic list of potential violations but offered no indication of which, if any, of these categories supposedly applied to my case.
 
 ## The Partial Recovery
 
@@ -48,7 +48,7 @@ After the 60-day period expired on June 28th, I regained access to my account, b
     caption='The persistent error message preventing any message sending'
 %}
 
-This state has persisted for over three months now, effectively rendering my LINE account useless for its primary purpose: communication.
+This has been going on for over three months. My account is essentially useless.
 
 ## Legal Action
 
@@ -64,44 +64,15 @@ The legal notice also highlighted that LINE, with its 98 million monthly users i
 
 LINE's response to the legal notice was disappointingly predictable and unhelpful. We received their response on August 14th (dated August 7th in their printed letter). They merely stated that the account had violated section 15 of their common terms of service[^3] regarding "compliance matters when using our services," and that they would provide no further guidance on the matter.
 
-This response perfectly encapsulates the problem with platform governance today: companies wielding enormous power over users' digital lives while providing minimal accountability or transparency.
+In other words: we banned you, we won't say why, and we're done talking about it.
 
-## The Broader Implications
+What bothers me most is that even with a lawyer involved, there's no real way to challenge this. LINE can suspend accounts, refuse to explain why, and just wait you out.
 
-My experience with LINE illustrates several troubling trends in digital platform governance:
-
-### Arbitrary Enforcement
-Platforms can and do take enforcement actions without providing meaningful explanations. Users are left to guess what they might have done wrong, making it impossible to avoid future violations.
-
-### Disproportionate Punishment
-Even if I had violated some terms of service (which I maintain I did not), the punishment—complete loss of chat history and indefinite messaging restrictions—seems disproportionate to any reasonable interpretation of platform violations.
-
-### Lack of Appeal Mechanisms
-Despite following proper channels and even engaging legal representation, there appears to be no meaningful way to appeal or resolve platform enforcement actions. The company simply states its position and refuses further engagement.
-
-### Digital Infrastructure Dependency
-When platforms like LINE become essential infrastructure for daily communication and business operations, arbitrary enforcement actions can have severe real-world consequences that extend far beyond the digital realm.
-
-## Lessons Learned
-
-This experience has reinforced several important principles for digital life:
-
-1. **Diversify communication channels**: Never rely solely on a single platform for critical communications[^2]
-2. **Regular backups**: Export important data regularly, as platforms can and will delete your content without warning
-3. **Platform alternatives**: Maintain presence on multiple platforms to reduce dependency on any single service
-4. **Document everything**: Keep records of platform interactions and potential violations for legal protection
+If anything, this reminded me not to rely on a single platform for important communications. Keep backups, keep alternatives.[^2]
 
 ## Moving Forward
 
-While my LINE account remains in limbo, I've adapted by migrating to alternative communication platforms and ensuring better redundancy in my digital communications. However, this transition comes with its own challenges: I now need to explain to all my contacts that I am no longer reachable on LINE—a platform that nearly everyone in Japan uses as their primary communication method.
-
-Technically, I could potentially create a new LINE account with a new phone number, but why should I go through this hassle when I did nothing wrong? The principle matters. Obtaining a new phone number and re-establishing all my contacts shouldn't be necessary when the original enforcement action was unjustified and opaque.
-
-The broader issues of platform accountability and user rights remain unresolved. This represents the current status of my case as of August 2025. My legal battle with LINE continues, and I will keep readers posted about any developments. The fight for platform accountability and user rights is far from over.
-
-The tech industry often speaks about "moving fast and breaking things," but when those things include people's livelihoods and social connections, the human cost becomes unacceptable. As digital platforms become increasingly central to modern life, we need better frameworks for accountability, transparency, and user protection.
-
-Until then, we're all just one algorithmic decision away from digital exile.
+Technically I could just get a new phone number and create a new account. But I shouldn't have to — I didn't do anything wrong. So the fight continues.
 
 
 [^1]: As of this writing, my legal fees related to this case amount to about ¥120,000.
