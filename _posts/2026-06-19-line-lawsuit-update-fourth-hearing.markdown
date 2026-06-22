@@ -15,6 +15,8 @@ On the second, LINE has until the next hearing to decide whether to file a furth
 
 So for now it comes down to whether LINE files anything more, and what. I'll post again when there's news.
 
+**Update:** The schedule is now set. LINE has until July 15, 2026 to file a brief, and the next hearing is on July 21, 2026. Once their brief is in, I'll go through it and report back.
+
 ---
 
 *Previous: [LINE Lawsuit Update: Our Rebuttal Brief](/2026/06/12/line-lawsuit-update-rebuttal-brief.html)*
