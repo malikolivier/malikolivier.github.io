@@ -13,6 +13,8 @@ The court asked how I see their evidence, and through my lawyer I answered that 
 
 Now it is my turn to respond. We will file a rebuttal to their third brief and their evidence. The court said that, depending on what we argue there, it may then ask both sides how they want to proceed.
 
+For the record, here is how I see it. If LINE's account of these connections is right, the likeliest explanation is that someone else got into my account, which would make it a security failure on their side. Even then, I don't see why I should be the one to lose my account over it. They could have blocked access from that address instead of freezing the whole thing. And while they point to the IP the connection came from, they say nothing about what was actually done through it, whether it was just a login or whether messages were sent, and I've seen no evidence that whoever it was broke the terms of service at all.
+
 I'll write again once our rebuttal is in.
 
 ---
