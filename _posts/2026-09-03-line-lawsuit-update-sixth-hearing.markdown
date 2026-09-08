@@ -13,6 +13,8 @@ On the legal one, the court told LINE that their argument as it stands isn't org
 
 The court also asked both sides to consider two things: whether witness examination is needed, and whether the case could be settled. On our side the only person who could be examined is me, and my lawyer told the court that we don't intend to apply for it. LINE will decide whether they want to cross-examine me, and if they do, I may have to appear in court myself. Settlement may be discussed at the next hearing as well, so both sides were asked to think about that too.
 
+On our side the conditions are decided. If the judge formally proposes a settlement, my lawyer will state two conditions. One is that LINE lift the suspension currently on my account. The other is that LINE not restrict the use of my personal account or of the LINE official accounts I run (including any I open in the future) without pointing to concrete facts of a violation of the terms of service.
+
 LINE will file their response to [our third brief](/2026/08/28/line-lawsuit-update-our-third-brief.html) by October 13, and the next hearing is on **October 19, 2026**. Hopefully then they'll be able to actually prove that I did infringe the terms of services (I did not to my knowledge).
 
 Nothing has changed on my side. The suspension is still in place and I still can't send messages, nearly a year and a half on. My lawyer asked me to confirm that before we start talking about settlement, and that was all I had to report.
