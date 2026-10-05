@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://boussejra.com" # the base hostname & protocol for your site
 twitter_username: kimoto_mariku
 github_username:  malikolivier
+linkedin_username: mariku-kimoto-181414113
 disqus:
     shortname: boussejra
 
