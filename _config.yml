@@ -15,18 +15,18 @@
 # in the templates via {{ site.myvariable }}.
 title: YAPB, Yet Another Programming Blog
 title_ja: またプログラマーのブログなの？
-author: Malik Olivier Boussejra
+author: Mariku Kimoto
 author_ja: 木本 真理究
-email: malik@boussejra.com
+email: mariku@boussejra.com
 description: >
-  Malik Oliver Boussejra's personal website. Write anything mostly about
+  Mariku Kimoto's personal website. Write anything mostly about
   software engineering or language learning.
 description_ja: >
   木本 真理究(まりく)の個人サイトです。ソフトウェア開発・言語学習などについていろいろ書いています。
   ご精読ありがとうございます。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://boussejra.com" # the base hostname & protocol for your site
-twitter_username: malik_olivier
+twitter_username: kimoto_mariku
 github_username:  malikolivier
 disqus:
     shortname: boussejra
