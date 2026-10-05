@@ -15,9 +15,8 @@ layout: default-ja
   <div class="share-page">
     <i class="fa fa-share-alt"></i>
     SNSでシェア &rarr;
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="ツイッターでシェア"><i class="fa fa-twitter"></i></a>
-    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Facebookでシェア"><i class="fa fa-facebook-official"></i></a>
-    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Google+でシェア"><i class="fa fa-google-plus"></i></a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&amp;url={{ page.url | prepend: site.url | cgi_escape }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="ツイッターでシェア"><i class="fa fa-twitter"></i></a>
+    <a href="https://facebook.com/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" rel="nofollow" target="_blank" title="Facebookでシェア"><i class="fa fa-facebook-official"></i></a>
   </div>
 
   {% if site.disqus.shortname %}
