@@ -1,44 +1,25 @@
+{% if include.lang == "ja" %}
+  {% assign author = site.author_ja | default: site.title_ja %}
+  {% assign description = site.description_ja %}
+{% else %}
+  {% assign author = site.author | default: site.title %}
+  {% assign description = site.description %}
+{% endif %}
 <footer class="site-footer">
-
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+    <div class="footer-about">
+      <p class="footer-author">{{ author | escape }} · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      <p class="footer-description">{{ description | escape }}</p>
     </div>
 
+    <ul class="social-links">
+      {% if site.github_username %}
+      <li><a href="https://github.com/{{ site.github_username }}" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a></li>
+      {% endif %}
+      {% if site.twitter_username %}
+      <li><a href="https://x.com/{{ site.twitter_username }}" title="X (Twitter)" aria-label="X (Twitter)">{% include icon.html name="x" %}</a></li>
+      {% endif %}
+      <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}" title="RSS" aria-label="RSS">{% include icon.html name="rss" %}</a></li>
+    </ul>
   </div>
-
 </footer>

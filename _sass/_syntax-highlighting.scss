@@ -1,0 +1,58 @@
+:root {
+  --hl-comment:     #6e7781;
+  --hl-keyword:     #cf222e;
+  --hl-string:      #0a3069;
+  --hl-number:      #0550ae;
+  --hl-function:    #8250df;
+  --hl-type:        #953800;
+  --hl-tag:         #116329;
+  --hl-deleted:     #82071e;
+  --hl-deleted-bg:  #ffebe9;
+  --hl-inserted:    #116329;
+  --hl-inserted-bg: #dafbe1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hl-comment:     #8b949e;
+    --hl-keyword:     #ff7b72;
+    --hl-string:      #a5d6ff;
+    --hl-number:      #79c0ff;
+    --hl-function:    #d2a8ff;
+    --hl-type:        #ffa657;
+    --hl-tag:         #7ee787;
+    --hl-deleted:     #ffa198;
+    --hl-deleted-bg:  rgba(248, 81, 73, 0.15);
+    --hl-inserted:    #7ee787;
+    --hl-inserted-bg: rgba(46, 160, 67, 0.15);
+  }
+}
+
+.highlight {
+  .c, .ch, .cm, .c1, .cs, .cpf     { color: var(--hl-comment); font-style: italic; }
+  .cp                              { color: var(--hl-keyword); }
+  .err                             { color: var(--hl-deleted); }
+
+  .k, .kc, .kd, .kn, .kp, .kr, .kv { color: var(--hl-keyword); }
+  .kt                              { color: var(--hl-type); }
+  .ow                              { color: var(--hl-keyword); }
+
+  .m, .mb, .mf, .mh, .mi, .il, .mo, .mx { color: var(--hl-number); }
+
+  .s, .sa, .sb, .sc, .dl, .sd, .s2, .sh, .si, .sx, .sr, .s1 { color: var(--hl-string); }
+  .se, .ss                         { color: var(--hl-number); }
+
+  .na, .ni, .no                    { color: var(--hl-number); }
+  .nv, .vc, .vg, .vi, .vm          { color: var(--hl-type); }
+  .nb, .bp, .nc, .ne, .nn          { color: var(--hl-type); }
+  .nf, .fm, .nd, .nl               { color: var(--hl-function); }
+  .nt                              { color: var(--hl-tag); }
+
+  .gd                              { color: var(--hl-deleted); background-color: var(--hl-deleted-bg); }
+  .gi                              { color: var(--hl-inserted); background-color: var(--hl-inserted-bg); }
+  .ge                              { font-style: italic; }
+  .gs                              { font-weight: 700; }
+  .gh, .gu                         { color: var(--hl-function); font-weight: 700; }
+  .gp, .go                         { color: var(--hl-comment); }
+  .gr, .gt                         { color: var(--hl-deleted); }
+}

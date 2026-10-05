@@ -5,19 +5,17 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} · <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-
   <div class="share-page">
-    <i class="fa fa-share-alt"></i>
-    Share this on &rarr;
-    <a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&amp;url={{ page.url | prepend: site.url | cgi_escape }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    <a href="https://facebook.com/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-official"></i></a>
+    <span class="share-label">Share</span>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | cgi_escape }}&amp;url={{ page.url | prepend: site.url | cgi_escape }}&amp;via={{ site.twitter_username }}&amp;related={{ site.twitter_username }}" rel="nofollow noopener" target="_blank" title="Share on X" aria-label="Share on X">{% include icon.html name="x" %}</a>
+    <a href="https://facebook.com/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" rel="nofollow noopener" target="_blank" title="Share on Facebook" aria-label="Share on Facebook">{% include icon.html name="facebook" %}</a>
   </div>
 
   {% if site.disqus.shortname %}

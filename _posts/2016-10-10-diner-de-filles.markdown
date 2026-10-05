@@ -9,6 +9,7 @@ keywords: diner filles popup translation
     position: fixed;
     border: 2;
     background-color: yellow;
+    color: #000;
     border-radius: 5px;
     margin: 2px;
 }

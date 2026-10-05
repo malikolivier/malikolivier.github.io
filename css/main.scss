@@ -3,70 +3,14 @@
 ---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$content-width: 42rem;
+$gutter:        1.25rem;
+$on-palm:       40rem;
+$on-laptop:     48rem;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    900px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-
-// Import partials from the `minima` theme.
-@import "minima";
-
-.share-page {
-    text-align: center;
-    background: $background-color;
-    color: $text-color;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 120%;
-    margin: 0.5 * $spacing-unit 0;
-
-    a {
-        font-weight: 700;
-        margin-left: 10px;
-
-        &:hover {
-            border-bottom: 1px dashed #fff;
-        }
-    }
-}
-
-@import "table";
-
-figure {
-    width: 100%;
-}
-figure > img {
-    margin: 0 auto;
-    width: 90%;
-}
-figcaption {
-    text-align: center;
-    margin: 10px 0;
-}
+@import
+  "base",
+  "syntax-highlighting",
+  "table",
+  "layout"
+;

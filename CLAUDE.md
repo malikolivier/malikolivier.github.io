@@ -37,7 +37,7 @@ Note: Jekyll and Bundle commands may not be available in all environments. The s
   - `post.html`/`post-ja.html`: Blog post layout  
   - `page.html`/`page-ja.html`: Static page layout
 - `_includes/`: Reusable HTML components (header, footer, etc.)
-- `_sass/`: Sass stylesheets, primarily extending the Minima theme
+- `_sass/`: Sass partials imported by `css/main.scss`
 - `about/`: Static about pages
 
 ### Bilingual Support
@@ -45,20 +45,22 @@ Note: Jekyll and Bundle commands may not be available in all environments. The s
 The site supports English and Japanese content:
 - English content uses standard layouts (`default.html`, `post.html`, etc.)
 - Japanese content uses `-ja` suffixed layouts and is served from `/ja/` path
+- `head.html`, `header.html` and `footer.html` are shared and take `lang="ja"` from the `-ja` layouts
 - Language configuration in `_config.yml` defines both languages
 - Content specifies language in front matter: `language: en` or `language: ja`
 
 ### Styling
 
-- Based on the Minima Jekyll theme
-- Custom styles in `css/main.scss` override theme defaults
-- Additional CSS frameworks: Bootstrap, Font Awesome
-- Custom table styles in `_sass/table.scss`
+- Custom stylesheet: `css/main.scss` imports `_sass/_base.scss` (color tokens, element styles), `_sass/_layout.scss` (header, footer, home, posts), `_sass/_syntax-highlighting.scss` and `_sass/table.scss`
+- Colors are CSS custom properties with a `prefers-color-scheme: dark` override; there is no theme toggle
+- `theme: minima` is still configured, but only for its `google-analytics.html` include
+- Site icons are inline SVGs from `_includes/icon.html`; Font Awesome is only loaded for icons used inside a few older posts
+- GitHub Pages compiles Sass with Ruby Sass 3.7: avoid `rgb(r g b / a)`, `min()`/`max()`, and mixed-unit math inside `clamp()`
 
 ### Special Features
 
 - Disqus comments integration
-- Social sharing buttons for Twitter, Facebook, Google+
+- Social sharing links for X and Facebook
 - Google Analytics tracking
 - Custom figure include for images with captions
 - Rust documentation hosted in `/rust-doc/` directory
