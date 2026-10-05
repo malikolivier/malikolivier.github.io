@@ -1,15 +1,30 @@
 {% if include.lang == "ja" %}
   {% assign author = site.author_ja | default: site.title_ja %}
-  {% assign description = site.description_ja %}
+  {% assign description = site.bio_ja | default: site.description_ja %}
 {% else %}
   {% assign author = site.author | default: site.title %}
-  {% assign description = site.description %}
+  {% assign description = site.bio | default: site.description %}
 {% endif %}
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-about">
       <p class="footer-author">{{ author | escape }} · <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       <p class="footer-description">{{ description | escape }}</p>
+      {% if site.links %}
+      <p class="footer-links">
+        {%- if include.lang == "ja" %}関連サイト：{% else %}Affiliated websites: {% endif -%}
+        {%- for link in site.links -%}
+          {%- if include.lang == "ja" -%}
+            {%- assign link_name = link.name_ja | default: link.name -%}
+            {%- assign link_url = link.url_ja | default: link.url -%}
+          {%- else -%}
+            {%- assign link_name = link.name -%}
+            {%- assign link_url = link.url -%}
+          {%- endif -%}
+          <a href="{{ link_url }}">{{ link_name | escape }}</a>{% unless forloop.last %} · {% endunless %}
+        {%- endfor -%}
+      </p>
+      {% endif %}
     </div>
 
     <ul class="social-links">

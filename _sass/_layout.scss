@@ -352,6 +352,14 @@
   margin-top: 0.35rem;
 }
 
+.footer-about .footer-links {
+  margin-top: 0.75rem;
+
+  a {
+    white-space: nowrap;
+  }
+}
+
 .social-links {
   display: flex;
   gap: 0.5rem;

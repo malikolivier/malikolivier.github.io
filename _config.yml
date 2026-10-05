@@ -23,11 +23,26 @@ description: >
   I used to write mostly about software engineering and language learning.
 description_ja: >
   木本 真理究(まりく)の個人サイトです。気になったことをいろいろ書いています。ソフトウェア開発・言語学習などについて書いていた時期もあります。ご精読ありがとうございます。
+bio: >
+  Technical founder interested in developer infrastructure and supply chain security.
+  Also a beekeeper with a PhD in Computer Science.
+bio_ja: >
+  テクニカルファウンダーで、開発者向けのインフラやサプライチェーンセキュリティに関心があります。また、在来種ミツバチの養蜂家でもあり、コンピュータサイエンスの博士号も保有しています。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://boussejra.com" # the base hostname & protocol for your site
 twitter_username: kimoto_mariku
 github_username:  malikolivier
 linkedin_username: mariku-kimoto-181414113
+links:
+  - name: StableBuild
+    url: https://www.stablebuild.com/
+    url_ja: https://stablebuild.jp/
+  - name: Kimoto Kinoko
+    name_ja: 木本きのこ
+    url: https://kimoto-kinoko.jp/
+  - name: Kimoto Kinoko honey shop
+    name_ja: はちみつオンラインショップ
+    url: https://kimotokinoko.theshop.jp/
 disqus:
     shortname: boussejra
 
