@@ -62,7 +62,7 @@ The site supports English and Japanese content:
 - Disqus comments integration
 - Social sharing links for X and Facebook
 - Custom figure include for images with captions
-- Rust documentation hosted in `/rust-doc/` directory
+- `/rust-doc/` only redirects old crate documentation links (`boow`, `fitrs`) to docs.rs
 - Interactive projects in `/rotateme/` directory
 
 ### Post Format

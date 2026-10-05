@@ -1,1 +1,0 @@
-initSidebarItems({"enum":[["Bow","Borrow-Or-oWned smart pointer."]]});
