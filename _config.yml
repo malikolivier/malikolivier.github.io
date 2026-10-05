@@ -19,11 +19,10 @@ author: Mariku Kimoto
 author_ja: 木本 真理究
 email: mariku@boussejra.com
 description: >
-  Mariku Kimoto's personal website. Write anything mostly about
-  software engineering or language learning.
+  Mariku Kimoto's personal website, where I write about whatever is on my mind.
+  I used to write mostly about software engineering and language learning.
 description_ja: >
-  木本 真理究(まりく)の個人サイトです。ソフトウェア開発・言語学習などについていろいろ書いています。
-  ご精読ありがとうございます。
+  木本 真理究(まりく)の個人サイトです。気になったことをいろいろ書いています。ソフトウェア開発・言語学習などについて書いていた時期もあります。ご精読ありがとうございます。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://boussejra.com" # the base hostname & protocol for your site
 twitter_username: kimoto_mariku
