@@ -74,3 +74,19 @@ defaults:
       path: "rust-doc"
     values:
       sitemap: false
+  - scope:
+      path: "rotateme"
+    values:
+      sitemap: false
+  - scope:
+      path: "rainfall"
+    values:
+      sitemap: false
+  - scope:
+      path: "resume"
+    values:
+      sitemap: false
+  - scope:
+      path: "resume.pdf"
+    values:
+      sitemap: false
