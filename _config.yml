@@ -35,6 +35,12 @@ disqus:
 # Build settings
 markdown: kramdown
 theme: minima
+exclude:
+  - CLAUDE.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
 languages:
     en:
