@@ -53,7 +53,7 @@ The site supports English and Japanese content:
 
 - Custom stylesheet: `css/main.scss` imports `_sass/_base.scss` (color tokens, element styles), `_sass/_layout.scss` (header, footer, home, posts), `_sass/_syntax-highlighting.scss` and `_sass/table.scss`
 - Colors are CSS custom properties with a `prefers-color-scheme: dark` override; there is no theme toggle
-- `theme: minima` is still configured, but only for its `google-analytics.html` include
+- `theme: minima` stays configured although nothing from it is used; without it GitHub Pages applies its default Primer theme
 - Site icons are inline SVGs from `_includes/icon.html`; Font Awesome is only loaded for icons used inside a few older posts
 - GitHub Pages compiles Sass with Ruby Sass 3.7: avoid `rgb(r g b / a)`, `min()`/`max()`, and mixed-unit math inside `clamp()`
 
@@ -61,7 +61,6 @@ The site supports English and Japanese content:
 
 - Disqus comments integration
 - Social sharing links for X and Facebook
-- Google Analytics tracking
 - Custom figure include for images with captions
 - Rust documentation hosted in `/rust-doc/` directory
 - Interactive projects in `/rotateme/` directory
