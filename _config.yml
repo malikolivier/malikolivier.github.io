@@ -67,3 +67,10 @@ languages:
         key: ja
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: "rust-doc"
+    values:
+      sitemap: false
