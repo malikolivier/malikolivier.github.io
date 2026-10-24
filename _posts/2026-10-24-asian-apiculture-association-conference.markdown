@@ -72,4 +72,4 @@ The figure reads from left to right: the wild plants that feed the pollinators, 
 
 The worrying part is that beekeepers in these villages expect their *Apis cerana* to decline by a third between 2021 and 2030. Native bees are easy to overlook next to the western honey bee, but this study puts a number on how much people depend on them.
 
-When we talk about protecting bees, what we actually need to do is to protect the *native* bees and pollinators.
+When we talk about protecting bees, what we actually need to do is to protect the *native* bees and pollinators. I'd love to help make or find a figure like the one above for Japan's pollinators too.
