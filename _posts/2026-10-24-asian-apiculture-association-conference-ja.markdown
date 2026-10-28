@@ -29,7 +29,7 @@ Roy Francis 氏が作った素晴らしい地図で、ミツバチのすべて�
 | &emsp;*A. m. ligustica* | &emsp;イタリアミツバチ | &emsp;Italian honey bee |
 | &emsp;*A. m. jemenitica* | &emsp;— | &emsp;Arabian honey bee |
 | *Apis cerana* | トウヨウミツバチ | Eastern honey bee |
-| &emsp;*A. c. cerana* | &emsp;チュウカミツバチ | &emsp;Eastern honey bee |
+| &emsp;*A. c. cerana* | &emsp;— | &emsp;Eastern honey bee |
 | &emsp;*A. c. indica* | &emsp;インドミツバチ | &emsp;Indian honey bee |
 | &emsp;*A. c. skorikovi* | &emsp;— | &emsp;Himalayan honey bee |
 | &emsp;*A. c. japonica* | &emsp;ニホンミツバチ | &emsp;Japanese honey bee |
@@ -40,7 +40,7 @@ Roy Francis 氏が作った素晴らしい地図で、ミツバチのすべて�
 | *Apis florea* | コミツバチ | Red dwarf honey bee |
 | *Apis andreniformis* | クロコミツバチ | Black dwarf honey bee |
 
-地図ではインドミツバチを独立種 *Apis indica* としていますが、ここではトウヨウミツバチの亜種として扱っています。また、*A. c. cerana* には定着した和名がないので、「チュウカミツバチ」はこちらで付けた呼び名です。中国だけでなく、アジア各地に分布しています。
+地図ではインドミツバチを独立種 *Apis indica* としていますが、ここではトウヨウミツバチの亜種として扱っています。また、*A. c. cerana* には定着した和名がなく、日本語の文献（[佐々木, 1994](https://tamagawa.repo.nii.ac.jp/record/970/files/15-3_1994_099-106_Sasaki.pdf)）では「原名亜種」と呼ばれています。
 
 *A. m. mellifera* は色の黒いセイヨウミツバチで、英語では「black bee」と呼ばれています。本来の分布域である北ヨーロッパや西ヨーロッパでも、今ではそのほとんどがイタリアミツバチなど、よそから持ち込まれたミツバチに置き換わってしまいました。セイヨウミツバチの中でも、在来のミツバチは危機にあるのです。残念ながら、養蜂家にとっては生産性の高いミツバチを使うほうがお得なので、在来のミツバチが犠牲になってしまいます。
 
