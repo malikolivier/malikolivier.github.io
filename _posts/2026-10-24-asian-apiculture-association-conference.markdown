@@ -3,6 +3,7 @@ layout: post
 title: "Joining the 2026 Asian Apiculture Association Conference"
 language: en
 keywords: AAA Asian Apiculture Association conference honey bees native bees Apis cerana Japanese honey bee pollination beekeeping
+image: /images/bees/world-honeybee-map.jpg
 ---
 
 A few days ago, I joined the [18th Asian Apiculture Association (AAA) Conference](http://en.aaa.cccfna.org.cn/) on October 16 and 17, 2026.

@@ -3,6 +3,7 @@ layout: post-ja
 title: "2026年アジア養蜂大会参加レポート"
 language: ja
 keywords: アジア養蜂大会 AAA ミツバチ 在来種 ニホンミツバチ トウヨウミツバチ 送粉 養蜂 ネパール
+image: /images/bees/world-honeybee-map.jpg
 ---
 
 先日、2026年10月16日と17日に開催された[第18回アジア養蜂大会](http://en.aaa.cccfna.org.cn/)に参加してきました。そこで学んだ在来ミツバチのことを紹介したいと思います。
