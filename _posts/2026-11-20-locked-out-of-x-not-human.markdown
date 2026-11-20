@@ -13,7 +13,7 @@ A month after [X suspended and quickly restored](/2026/10/09/suspended-by-x-rest
     caption='X asking me to confirm I am a human'
 %}
 
-So I scanned it with my phone. Then on my phone, X said it ccould not confirm that I am a human.
+So I scanned it with my phone. Then on my phone, X said it could not confirm that I am a human.
 
 {% include figure.html
     url='/images/x/not-human.jpg'
