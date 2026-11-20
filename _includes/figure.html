@@ -1,9 +1,9 @@
 <figure style="{% if include.width != nil %} width: {{ include.width }} {% endif %}">
 <img src="{{ include.url }}"
 {% if include.alt == nil %}
-    alt="{{ include.caption }}"
+    alt="{{ include.caption | strip_html | escape }}"
 {% else %}
-    alt="{{ include.alt }}"
+    alt="{{ include.alt | escape }}"
 {% endif %} />
 <figcaption>{{ include.caption }}</figcaption>
 </figure>
