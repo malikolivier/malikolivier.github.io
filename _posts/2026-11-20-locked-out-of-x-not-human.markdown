@@ -26,3 +26,15 @@ Last time, I wrote that I did not expect X's support to be more helpful than LIN
 
 Interestingly, this week, we were also locked out of Reddit, after appealing, we were back within a day.
 It seems that with all the bots around, it's now very hard to run a legitimate business on social networks.
+
+**Update 2026-11-25:** We are back on X! I installed X on a new phone and tried again. It took about five rounds of human verification, two of them asking me to scan my hands and do some weird hand gesture, but X finally agreed that I am a human.
+
+After another round of locking and unlocking, the account now has a temporary label saying it may contain spam or be engaging in "inauthentic behaviors", which may limit its reach. 
+
+{% include figure.html
+    url='/images/x/spam-label.png'
+    caption='Back in, but labelled as possible spam'
+%}
+
+The only long-term solution seems to get "verified", by paying a monthly subscription with a credit card.
+In the end, I paid for X Premium ($8/month), and the account is now verified. ＼(^o^)／
