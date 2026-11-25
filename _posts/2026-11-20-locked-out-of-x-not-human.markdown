@@ -37,4 +37,4 @@ After another round of locking and unlocking, the account now has a temporary la
 %}
 
 The only long-term solution seems to get "verified", by paying a monthly subscription with a credit card.
-In the end, I paid for X Premium ($8/month), and the account is now verified. ＼(^o^)／
+In the end, I paid for X Premium ($8/month) while I could still log in, and the account is now verified. ＼(^o^)／
